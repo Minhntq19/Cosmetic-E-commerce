@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+<<<<<<< HEAD
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Minhntq19/Cosmetic-E-commerce.git"
@@ -19,5 +20,14 @@
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.1"
+=======
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mysql": "^2.18.1"
+>>>>>>> bfe67846739b62b233ac5e14edace377c1708cd9
   }
 }
