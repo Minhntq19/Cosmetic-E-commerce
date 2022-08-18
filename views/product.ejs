@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="product.css">
+    <!--Javascript-->
+    <script src="js/product.js"></script>
+</head>
+<body>
+<!--------------------Header---------------------------------------->
+<%- include("header.ejs") %>
+<!--------------------Body--------------------------------->
+<!--------------------Product--------------------------------->
+<section class="product">
+    <div class="container">
+        <div class="product-top">
+            <p>Home</p><p>/</p><p>Face & Body Care</p><p>/</p><p>Face</p><p>/</p><p>Cleanser & Toner</p><p>/</p><p>Toner</p><p>/</p><p>Hydrating Gentle Foaming Cleanser</p>
+        </div>
+        <div class="product-content row">
+            <div class="product-content-left row">
+                <div class="product-content-left-small-img">
+                    <img  src="https://www.clarins.com.sg/dw/image/v2/AAJY_PRD/on/demandware.static/-/Sites-clarins-master-products/default/dwa3f0d955/original/80071907_original_original_X.jpg?sw=70&sh=70" onclick="zoomout(this)" alt="image">
+                    <img  src="https://www.clarins.com.sg/dw/image/v2/AAJY_PRD/on/demandware.static/-/Sites-clarins-master-products/default/dwebc2ea9f/original/80071907_original_original_2.jpg?sw=70&sh=70" onclick="zoomout(this)" alt="image">
+                    <img  src="https://www.clarins.com.sg/dw/image/v2/AAJY_PRD/on/demandware.static/-/Sites-clarins-master-products/default/dwc06d93e7/original/80071907_original_original_3.jpg?sw=70&sh=70" onclick="zoomout(this)" alt="image">
+                    <img  src="https://www.clarins.com.sg/dw/image/v2/AAJY_PRD/on/demandware.static/-/Sites-clarins-master-products/default/dw28c34d58/original/80071907_original_original_4.jpg?sw=70&sh=70" onclick="zoomout(this)" alt="image">
+                    <img  src="https://www.clarins.com.sg/dw/image/v2/AAJY_PRD/on/demandware.static/-/Sites-clarins-master-products/default/dw711b4cb3/original/80071907_original_original_5.jpg?sw=70&sh=70" onclick="zoomout(this)" alt="image">
+                    <img  src="https://www.clarins.com.sg/dw/image/v2/AAJY_PRD/on/demandware.static/-/Sites-clarins-master-products/default/dwbb05f83b/original/80071907_original_original_8.jpg?sw=70&sh=70" onclick="zoomout(this)" alt="image">
+                </div>
+                <div class="product-content-left-big-img row" id="frame">
+                </div>
+            </div>
+            <div class="product-content-right ">
+                <!--Name-->
+                <div class="product-content-right-product-name ">
+                    <h3>Hydrating Gentle Foaming Cleanser</h3>
+                    <div class="product-content-right-product-name-icon">
+                        <i class="fas fa-star" style="font-size: 11px;color:#b40024"></i>
+                        <i class="fas fa-star" style="font-size: 11px;color:#b40024"></i>
+                        <i class="fas fa-star" style="font-size: 11px;color:#b40024"></i>
+                        <i class="fas fa-star" style="font-size: 11px;color:#b40024"></i>
+                        <i class="fas fa-star-half" style="font-size:11px;color: #b40024"></i>
+                    </div>
+                    <p>A foaming facial cleanser that hydrates and rebalances normal to dry skin.<u><a href="#">PRODUCT DETAILS</a></u></p>
+                </div>
+                <!--Price-->
+                <div class="product-content-right-product-price" >
+                    S$50.00
+                </div>
+                <!--Size-->
+                <div class="product-content-right-product-size">
+                    <div class="size">
+                        <button type="button" class="btn btn-light" style="width:88px;height:38px;border: 1px solid #cfcac9">30 ml</button>
+                        <button type="button" class="btn btn-light" style="width:88px;height:38px;border: 1px solid #cfcac9">50 ml</button>
+                        <button type="button" class="btn btn-light" style="width:88px;height:38px;border: 1px solid #cfcac9">75 ml</button>
+                    </div>
+                </div>
+                <!--Quantity-->
+                <div class="quantity" >
+                    <input type="number" min="0" value="1" max="10">
+                </div>
+                <!--Button-->
+                <div class="product-content-right-product-button">
+                    <button type="button" class="btn btn-danger">ADD TO BAG</button>
+                    <button type="button" class="btn btn-danger">BUY NOW</button>
+                </div>
+                <!--Icon-->
+                <div class="product-content-right-product-icon">
+                    <div class="product-content-right-product-icon-item">
+                        <i class="fas fa-phone-alt"></i><p>Hotline</p>
+                    </div>
+                    <div class="product-content-right-product-icon-item">
+                        <i class="fas fa-comment"></i><p>Chat</p>
+                    </div>
+                    <div class="product-content-right-product-icon-item">
+                        <i class="fas fa-envelope"></i><p>Mail</p>
+                    </div>
+                </div>
+                <hr>
+                <!--Note-->
+                <div class="product-content-right-bottom">
+                    <div class="product-content-right-bottom-title">
+                        <div class="product-content-right-bottom-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="product-content-right-bottom-text">
+                            <p>Free Shipping</p>
+                        </div>
+                    </div>
+                    <div class="product-content-right-bottom-title">
+                        <div class="product-content-right-bottom-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <div class="product-content-right-bottom-text">
+                            <p>Get a 2-pc gift set with $350 spend.</p>
+                        </div>
+                    </div>
+                    <div class="product-content-right-bottom-title">
+                        <div class="product-content-right-bottom-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="product-content-right-bottom-text">
+                            <p>You can earn 50 points by purchasing this item.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-----------------------Introduce----------------->
+<section class="introduce"  >
+    <div class="introduce-header">
+        <p>Discover more</p>
+    </div>
+    <div class="introduce-body">
+        <div class="introduce-left">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" style="font-size: 20px;margin-left: -65px "  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            What is it ?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body" id="bodyOne">
+                            <p>This rinse-off cleanser is specifically formulated for normal to dry skin with a fresh scent, lightly foaming texture and hydrating plant extracts. Skin is perfectly cleansed and feels soft and supple.</p>
+                            <p>All our products are sustainably developed and we strive to constantly improve our eco-conscious approach.</p>
+                            <p>The new formulas of our cleansers are biodegradable* and even more natural.</p>
+                            <p>With at least 91% ingredients from natural origin, including new naturally-lathering agents, they offer guaranteeed effectiveness in a silky, foaming texture. The remaining 9% are ingredients that help to conserve the product correctly and create a unique sensory experience.</p>
+                            <p>The fragrances of our Gentle Foaming Cleansers have also evolved in line with new changes in cosmetic regulations.</p>
+                            <p>*Method OCDE 301B</p>
+                            <ul >
+                                <li style="list-style-type: disc"><b>Skin Type :</b> Normal</li>
+                                <li style="list-style-type: disc"><b>Texture :</b> With Water</li>
+                                <li style="list-style-type: disc"><b>Use :</b> Apply morning and/or night.</li>
+                            </ul>
+                            <p><b>Benefits</b></p>
+                            <ul>
+                                <li style="list-style-type: disc">Perfectly cleanses skin.</li>
+                                <li style="list-style-type: disc">Hydrates.</li>
+                                <li style="list-style-type: disc">Leaves skin soft, supple and soothed.</li>
+                            </ul>
+                            <p><b>Clarins Plus</b></p>
+                            <p>Clarins makes cleansing easy with a different-coloured cleanser per skin type. Choose the yellow one if you have normal to dry skin.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" style="font-size: 20px;margin-left:-65px " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Ingredients
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>AQUA/WATER/EAU. SODIUM COCOYL ISETHIONATE. GLYCERIN. SODIUM LAUROYL SARCOSINATE. SQUALANE. PROPANEDIOL. GLYCOL DISTEARATE. COCONUT ACID. GLYCERYL BEHENATE. C14-22 ALCOHOLS. POLYACRYLATE CROSSPOLYMER-6. SODIUM ISETHIONATE. PARFUM/FRAGRANCE. SODIUM CITRATE. CHLORPHENESIN. CITRIC ACID. C12-20 ALKYL GLUCOSIDE. ALOE BARBADENSIS LEAF JUICE POWDER. DISODIUM EDTA. MALTODEXTRIN. MORINGA OLEIFERA SEED EXTRACT. MELISSA OFFICINALIS LEAF EXTRACT. T-BUTYL ALCOHOL. SAPONARIA OFFICINALIS LEAF EXTRACT. GENTIANA LUTEA EXTRACT. SODIUM BENZOATE. POTASSIUM SORBATE. [C3793A]</p>
+                            <p style="font-size: 10px">*For informational purposes only. Every ingredient list is specific to an individual product reference. All formulas are subject to change. While we endeavour to keep this ingredient list accurate, we cannot guarantee that it is reliable, up-to-date, or error-free. Please also refer to the ingredient list on the product's outer packaging for a complete, accurate, and up-to-date list.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="introduce-right">
+            <div class="card">
+                <img src="https://www.clarins.com.sg/on/demandware.static/-/Library-Sites-clarins-v3/default/dwc5439260/ingredients/aloe_vera.jpg " class="card-img-top" alt="...">
+                <div class="card-body" style="background-color: #dddddd">
+                    <h5 class="card-title">KEY INGREDIENTS</h5>
+                    <h5><b style="font-size: 25px">Aloe vera</b></h5>
+                    <p class="card-text">Its extract is commonly used for its moisturising properties</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-----------------Instruction----------------------->
+<section class="instruction">
+    <div class="ins-header">
+        <p>How to apply</p>
+    </div>
+    <div class="ins-body">
+        <div class="ins-body-left">
+            <p>Apply before your Clarins day or night cream for optimal anti-ageing performance.</p>
+        </div>
+        <div class="ins-body-right">
+            <iframe width="600px" height="330px" src="https://youtube.com/embed/yy2xLzrz0Bk"></iframe>
+        </div>
+    </div>
+    <div class="ins-bottom">
+        <div class="card">
+            <img src="https://www.clarins.com.sg/on/demandware.static/-/Library-Sites-clarins-v3/default/dwe7345a7d/pdp/how-to/steps/how-to-steps-cleanser-step1warm.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"><b>1.WARM</b></h5>
+                <p class="card-text">Dispense Double Serum into your palm. Warm the mixture in your hands to bring it to skin temperature, so that your skin accepts it instantly.</p>
+            </div>
+            <div class="card-note" style="padding-top: 12px">
+                <i class="far fa-clock"></i>
+                <p>3 second</p>
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://www.clarins.com.sg/on/demandware.static/-/Library-Sites-clarins-v3/default/dwd290b799/pdp/how-to/steps/how-to-steps-cleanser-step2removehands.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"><b>2.APPLY</b></h5>
+                <p class="card-text">Use the natural weight of your hands to distribute the product evenly over your face and neck.</p>
+                <div class="card-note" style="padding-top: 30px">
+                    <i class="far fa-clock"></i>
+                    <p>8 second</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" >
+            <img src="https://www.clarins.com.sg/on/demandware.static/-/Library-Sites-clarins-v3/default/dw997b1169/pdp/how-to/steps/how-to-steps-cleanser-step3rinse.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"><b>3.DRAIN</b></h5>
+                <p class="card-text">Apply draining pressure 3 times on the cheeks, 3 times on the forehead, 3 times on each side of the neck.</p>
+                <div class="card-note" style="padding-top: 30px">
+                    <i class="far fa-clock"></i>
+                    <p>15 second</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--------------------------Feedback----------------------------------------->
+<section class="feedback">
+    <div class="feedback-container">
+        <div class="feedback-header">
+            <h3>What Customers Are Saying</h3>
+        </div>
+        <div class="feedback-body">
+            <div class="feedback-review">
+                <div class="feedback-review-name">
+                    <p>REVIEWS</p>
+                </div>
+                <div class="feedback-review-button">
+                    <button type="button" class="btn btn-danger">WRITE A REVIEWS</button>
+                </div>
+            </div>
+            <div class="feedback-card">
+                <div class="feedback-card-left">
+                    <div class="feedback-card-name"><b style="font-size: 20px">Liiz</b></div>
+                    <div class="feedback-card-address" style="font-size: 18px">Fife Scotland</div>
+                    <div class="feedback-card-review" style="font-size: 18px">Review : <b style="font-size: 18px">1</b></div>
+                    <div class="feedback-card-vote" style="font-size: 18px">Vote : <b style="font-size: 18px">0</b></div>
+                    <div class="feedback-card-gender" style="font-size: 18px">Gender : <b style="font-size: 18px">Female</b></div>
+                    <div class="feedback-card-age" style="font-size: 18px">Age : <b style="font-size: 18px">56 - 65</b></div>
+                </div>
+                <div class="feedback-card-right">
+                    <div class="feedback-card-item">
+                        <div class="feedback-card-icon">
+                            <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                            <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                            <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                            <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                            <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                        </div>
+                        <div class="feedback-card-date">
+                            <p>. 8 days ago</p>
+                        </div>
+                    </div>
+                    <div class="feedback-card-title">
+                        <p>Washing your face kindly</p>
+                    </div>
+                    <div class="feedback-card-text">
+                        <p>Product quite thick. At the beginning it was a struggle to get product out of the tube. But it’s fine now. I like to ‘wash’ my face</p>
+                    </div>
+                    <div class="feedback-card-note">
+                        <p><b>Recommends this product</b> <i class="fas fa-check"></i> Yes </p>
+                    </div>
+                    <div class="feedback-card-box">
+                        <img class="feedback-card-box-img" src="https://photos-eu.bazaarvoice.com/photo/2/cGhvdG86YXR0cmlidXRpb25sb2dvMg/875e7b45-d88e-4380-9b7f-c8d637c25ecd" alt="clarins.co.uk">
+                        <p>	Originally posted on clarins.co.uk</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback-card">
+                <div class="feedback-card-left">
+                    <div class="feedback-card-name"><b style="font-size: 20px">Joanna23</b></div>
+                    <div class="feedback-card-address" style="font-size: 18px">South Yorkshire</div>
+                    <div class="feedback-card-review" style="font-size: 18px">Review : <b style="font-size: 18px">1</b></div>
+                    <div class="feedback-card-vote" style="font-size: 18px">Vote : <b style="font-size: 18px">0</b></div>
+                    <div class="feedback-card-gender" style="font-size: 18px">Gender : <b style="font-size: 18px">Female</b></div>
+                    <div class="feedback-card-age" style="font-size: 18px">Age : <b style="font-size: 18px">36 - 45</b></div>
+                </div>
+                <div class="feedback-card-right">
+                    <div class="feedback-card-item">
+                        <div class="feedback-card-icon">
+                            <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                            <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                            <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                            <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                            <i class="fas fa-star" style="font-size: 17px;color:#eeeeee"></i>
+                        </div>
+                        <div class="feedback-card-date">
+                            <p>. 10 days ago</p>
+                        </div>
+                    </div>
+                    <div class="feedback-card-title">
+                        <p>Hydrating Gentle Foaming Cleanser</p>
+                    </div>
+                    <div class="feedback-card-text">
+                        <p>This product is my favourite, leave skin feeling clean and hydrated.</p>
+                    </div>
+                    <div class="feedback-card-note">
+                        <p><b>Recommends this product</b> <i class="fas fa-check"></i> Yes </p>
+                    </div>
+                    <div class="feedback-card-box">
+                        <img class="feedback-card-box-img" src="https://photos-eu.bazaarvoice.com/photo/2/cGhvdG86YXR0cmlidXRpb25sb2dvMg/875e7b45-d88e-4380-9b7f-c8d637c25ecd" alt="clarins.co.uk">
+                        <p>	Originally posted on clarins.co.uk</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback-card">
+                <div class="feedback-card-left">
+                    <div class="feedback-card-name"><b style="font-size: 20px">Helen weigh</b></div>
+                    <div class="feedback-card-address" style="font-size: 18px">Gloucestershire</div>
+                    <div class="feedback-card-review" style="font-size: 18px">Review : <b style="font-size: 18px">1</b></div>
+                    <div class="feedback-card-vote" style="font-size: 18px">Vote : <b style="font-size: 18px">0</b></div>
+                    <div class="feedback-card-gender" style="font-size: 18px">Gender : <b style="font-size: 18px">Female</b></div>
+                    <div class="feedback-card-age" style="font-size: 18px">Age : <b style="font-size: 18px">56 - 65</b></div>
+                </div>
+                <div class="feedback-card-right">
+                    <div class="feedback-card-item">
+                        <div class="feedback-card-icon">
+                            <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                            <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                            <i class="fas fa-star-half" style="font-size:17px;color: #b40024"></i>
+                            <i class="fas fa-star" style="font-size: 17px;color:#eeeeee"></i>
+                            <i class="fas fa-star" style="font-size: 17px;color:#eeeeee"></i>
+                        </div>
+                        <div class="feedback-card-date">
+                            <p>. 13 days ago</p>
+                        </div>
+                    </div>
+                    <div class="feedback-card-title">
+                        <p>It’s ok!</p>
+                    </div>
+                    <div class="feedback-card-text">
+                        <p>It’s ok! I have used cotton seed foaming wash for about 10 years and nothing compares. This doesn’t feel as cleansing</p>
+                    </div>
+                    <div class="feedback-card-note">
+                        <p><b>Recommends this product</b> <i class="fas fa-check"></i> Yes </p>
+                    </div>
+                    <div class="feedback-card-box">
+                        <img class="feedback-card-box-img" src="https://photos-eu.bazaarvoice.com/photo/2/cGhvdG86YXR0cmlidXRpb25sb2dvMg/875e7b45-d88e-4380-9b7f-c8d637c25ecd" alt="clarins.co.uk">
+                        <p>	Originally posted on clarins.co.uk</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback-card">
+                <div class="feedback-card-left">
+                    <div class="feedback-card-name"><b style="font-size: 20px">JenniferR</b></div>
+                    <div class="feedback-card-address" style="font-size: 18px">Berwick, Australia</div>
+                    <div class="feedback-card-review" style="font-size: 18px">Review : <b style="font-size: 18px">1</b></div>
+                    <div class="feedback-card-vote" style="font-size: 18px">Vote : <b style="font-size: 18px">0</b></div>
+                    <div class="feedback-card-gender" style="font-size: 18px">Gender : <b style="font-size: 18px">Female</b></div>
+                    <div class="feedback-card-age" style="font-size: 18px">Age : <b style="font-size: 18px">56 - 65</b></div>
+                </div>
+                <div class="feedback-card-right">
+                    <div class="feedback-card-item">
+                        <div class="feedback-card-icon">
+                            <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                            <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                            <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                            <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                            <i class="fas fa-star" style="font-size: 17px;color:#eeeeee"></i>
+                        </div>
+                        <div class="feedback-card-date">
+                            <p>. 22 days ago</p>
+                        </div>
+                    </div>
+                    <div class="feedback-card-title">
+                        <p>Good, light cleansing, not for mascara removal.</p>
+                    </div>
+                    <div class="feedback-card-text">
+                        <p>Leaves skin feeling fresh and ready for skin regime. Removes makeup easily however not that great at removing mascara. Fresh fragrance, gentle on skin.</p>
+                    </div>
+                    <div class="feedback-card-note">
+                        <p><b>Recommends this product</b> <i class="fas fa-check"></i> Yes </p>
+                    </div>
+                    <div class="feedback-card-box">
+                        <img class="feedback-card-box-img" src="https://photos-eu.bazaarvoice.com/photo/2/cGhvdG86YXR0cmlidXRpb25sb2dvMg/875e7b45-d88e-4380-9b7f-c8d637c25ecd" alt="clarins.co.uk">
+                        <p>	Originally posted on clarins.co.uk</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback-card" style="width: 100%;height: 420px;padding-right: 20px">
+                <div class="feedback-card-left">
+                    <div class="feedback-card-name"><b style="font-size: 20px">Marine888</b></div>
+                    <div class="feedback-card-address" style="font-size: 18px">Devon</div>
+                    <div class="feedback-card-review" style="font-size: 18px">Review : <b style="font-size: 18px">1</b></div>
+                    <div class="feedback-card-vote" style="font-size: 18px">Vote : <b style="font-size: 18px">0</b></div>
+                    <div class="feedback-card-gender" style="font-size: 18px">Gender : <b style="font-size: 18px">Female</b></div>
+                    <div class="feedback-card-age" style="font-size: 18px">Age : <b style="font-size: 18px">46 - 55</b></div>
+                </div>
+                <div class="feedback-card-right">
+                    <div class="feedback-card-item">
+                        <div class="feedback-card-icon">
+                            <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                            <i class="fas fa-star-half" style="font-size:17px;color:#b40024"></i>
+                            <i class="fas fa-star" style="font-size: 17px;color:#eeeeee"></i>
+                            <i class="fas fa-star" style="font-size: 17px;color:#eeeeee"></i>
+                            <i class="fas fa-star" style="font-size: 17px;color:#eeeeee"></i>
+                        </div>
+                        <div class="feedback-card-date">
+                            <p>. 19 days ago</p>
+                        </div>
+                    </div>
+                    <div class="feedback-card-title">
+                        <p>Disappointting</p>
+                    </div>
+                    <div class="feedback-card-text">
+                        <p> Really disappointed with this cleanser. It doesn’t mix too well with water and comes out like a blob. I used to use the tamarind or cottonseed cleanser but they have been discontinued so I had no choice but to try this.</p>
+                    </div>
+                    <div class="feedback-card-note">
+                        <p><b>Recommends this product</b> <i class="fas fa-check"></i> No </p>
+                    </div>
+                    <div class="feedback-card-box">
+                        <img class="feedback-card-box-img" src="https://photos-eu.bazaarvoice.com/photo/2/cGhvdG86YXR0cmlidXRpb25sb2dvMg/875e7b45-d88e-4380-9b7f-c8d637c25ecd" alt="clarins.co.uk">
+                        <p>	Originally posted on clarins.co.uk</p>
+                    </div>
+                    <div class="feedback-card-answer">
+                        <div class="feedback-card-answer-title">
+                            <p>Response from Clarins-EN_GB:</p>
+                        </div>
+                        <div class="feedback-card-answer-note">
+                            <p><b>Customer Relations</b> · 18 days ago </p>
+                        </div>
+                        <div class="feedback-card-answer-text">
+                            <p>We are sorry to hear of your experience with our Hydrating Gentle foaming cleanser. If you would like to discuss this further, please do email our Clarins Customer Relations team at
+                                <a href="#"><b>HELP@CLARINS.CO.UK.</b></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback-footer">
+            <div class="feedback-footer-name">
+                <p>1–5 of 13 Reviews </p>
+            </div>
+            <div class="feedback-footer-button">
+                <button type="button" class="btn btn-danger">NEXT PAGE </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------------------------Best Seller--------------------------------------->
+<section class="best-seller">
+    <div class="best-seller-header">
+        <p>Best Seller</p>
+    </div>
+    <div class="best-seller-main">
+        <div class="best-seller-main-card">
+            <div class="best-seller-main-card-img">
+                <a href="#">
+                    <img src="https://www.clarins.com.sg/on/demandware.static/-/Library-Sites-clarins-v3/default/dwc0912219/Homepage_CBA/Pushs_carousel/CBA_HP_Pushs-Carousel-292x292_SKINDIAGNOSIS_Mixte_INTE.jpg" class="card-img-top"  alt="...">
+                </a>
+            </div>
+            <div class="best-seller-main-card-body">
+                <div class="best-seller-main-card-body-name">
+                    <p>Soothing Gentle Foaming Cleanser</p>
+                </div>
+                <div class="best-seller-main-card-body-size">
+                    <p>125 ml</p>
+                </div>
+                <div class="best-seller-main-card-body-price">
+                    <p>S$50.00</p>
+                </div>
+                <div class="best-seller-main-card-body-rating">
+                    <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                    <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                    <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                    <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                    <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                </div>
+            </div>
+        </div>
+        <div class="best-seller-main-card">
+            <div class="best-seller-main-card-img">
+                <a href="#">
+                    <img src="https://www.clarins.com.sg/on/demandware.static/-/Library-Sites-clarins-v3/default/dwc0912219/Homepage_CBA/Pushs_carousel/CBA_HP_Pushs-Carousel-292x292_SKINDIAGNOSIS_Mixte_INTE.jpg" class="card-img-top"  alt="...">
+                </a>
+            </div>
+            <div class="best-seller-main-card-body">
+                <div class="best-seller-main-card-body-name">
+                    <p>Double Serum</p>
+                </div>
+                <div class="best-seller-main-card-body-size" id="card-2" style="margin-top: 35px">
+                    <p>50 ml</p>
+                </div>
+                <div class="best-seller-main-card-body-price">
+                    <p>S$175.00</p>
+                </div>
+                <div class="best-seller-main-card-body-rating">
+                    <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                    <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                    <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                    <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                    <i class="fas fa-star-half" style="font-size:17px;color:#b40024"></i>
+                </div>
+            </div>
+        </div>
+        <div class="best-seller-main-card">
+            <div class="best-seller-main-card-img">
+                <a href="#">
+                    <img src="https://www.clarins.com.sg/on/demandware.static/-/Library-Sites-clarins-v3/default/dwc0912219/Homepage_CBA/Pushs_carousel/CBA_HP_Pushs-Carousel-292x292_SKINDIAGNOSIS_Mixte_INTE.jpg" class="card-img-top"  alt="...">
+                </a>
+            </div>
+            <div class="best-seller-main-card-body">
+                <div class="best-seller-main-card-body-name">
+                    <p>V Shaping Facial Lift Duo</p>
+                </div>
+                <div class="best-seller-main-card-body-size" id="card-3" style="margin-top: 35px">
+                    <p>1 item</p>
+                </div>
+                <div class="best-seller-main-card-body-price">
+                    <p>S$205.00</p>
+                </div>
+                <div class="best-seller-main-card-body-rating">
+                    <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                    <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                    <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                    <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                    <i class="fas fa-star-half" style="font-size:17px;color:#b40024"></i>
+                </div>
+            </div>
+        </div>
+        <div class="best-seller-main-card">
+            <div class="best-seller-main-card-img">
+                <a href="#">
+                    <img src="https://www.clarins.com.sg/on/demandware.static/-/Library-Sites-clarins-v3/default/dwc0912219/Homepage_CBA/Pushs_carousel/CBA_HP_Pushs-Carousel-292x292_SKINDIAGNOSIS_Mixte_INTE.jpg" class="card-img-top"  alt="...">
+                </a>
+            </div>
+            <div class="best-seller-main-card-body">
+                <div class="best-seller-main-card-body-name">
+                    <p>Pore Control Serum</p>
+                </div>
+                <div class="best-seller-main-card-body-size" id="card-4" style="margin-top: 35px">
+                    <p>30 ml</p>
+                </div>
+                <div class="best-seller-main-card-body-price">
+                    <p>S$95.00</p>
+                </div>
+                <div class="best-seller-main-card-body-rating">
+                    <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                    <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                    <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                    <i class="fas fa-star" style="font-size: 17px;color:#b40024"></i>
+                    <i class="fas fa-star" style="font-size: 17px;color:#eeeeee"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--------------------Footer----------------------------->
+<%- include("footer.ejs") %>
+
+</body>
+</html>
