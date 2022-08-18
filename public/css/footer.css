@@ -1,5 +1,10 @@
 /**footer**/
-
+.form-control:focus {
+	box-shadow: none;
+}
+.form-select:focus {
+	box-shadow: none;
+}
 .footer-39201 {
 	padding: 30px 0;
 	background-color: #e5e5e5;
@@ -59,6 +64,7 @@
 .footer-39201 .nav-links li {
 	display: block;
 	margin-bottom: 10px;
+	margin-top: 10px;
 }
 .footer-39201 .nav-links li a {
 	color: #000;
@@ -95,11 +101,12 @@ footer .col:nth-child(odd) {
 	background-color: #dcdcdc;
 }
 h2 {
-	width: 1120px;
+	width: 85%;
 	text-align: center;
 	border-bottom: 1px solid #000;
 	line-height: 0.1em;
-	margin: 0px 130px 20px 115px;
+	margin: auto;
+	margin-bottom: 20px;
 }
 h2 span {
 	background: #dcdcdc;
@@ -109,4 +116,13 @@ h2 span {
 .footer-logo {
 	text-align: center;
 	padding: 0 0 20px 0;
+	width: 80%;
+	margin: auto;
+}
+footer input {
+	margin-bottom: 20px;
+	border-radius: 0px;
+}
+footer button {
+	margin-bottom: 20px;
 }

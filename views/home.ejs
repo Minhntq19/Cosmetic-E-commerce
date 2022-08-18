@@ -4,12 +4,6 @@
 		<meta charset="UTF-8" />
 		<title>Title</title>
 		<!-- Font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-			rel="stylesheet"
-		/>
 		<!-- Bootstrap -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -32,8 +26,7 @@
 			integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
 			crossorigin="anonymous"
 		></script>
-		<!-- Fontawesome -->
-		<!-- CSS -->
+		<!-- FontAwesome -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
 		<link rel="stylesheet" href="/css/home.css" />
 		<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css" />
@@ -47,33 +40,44 @@
 		<!--End Header-->
 
 		<!--Body-->
-		<!--body1:Slider--><!----XONG----->
-		<div class="container-body-1" style="padding-top: 100px">
+		<!--body1:Slider--><!--------->
+		<div class="container-body-1">
 			<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active" data-bs-interval="5000">
-						<a href="#"
-							><img
-								src="https://www.clarins.com.sg/on/demandware.static/-/Library-Sites-clarins-v3/default/dwfea558af/Homepage_CBA/Aspot/ECOM/2022/AUG/220815_sg_virtual_beauty_cafe_desktop.jpg"
-								class="d-block w-100"
-								alt="..."
-						/></a>
+						<a href="/makeup">
+							<div class="slider__picture">
+								<img
+									src="https://www.clarins.com.sg/on/demandware.static/-/Library-Sites-clarins-v3/default/dwfea558af/Homepage_CBA/Aspot/ECOM/2022/AUG/220815_sg_virtual_beauty_cafe_desktop.jpg"
+									class=""
+								/>
+								<div class="slogan"></div>
+							</div>
+						</a>
 					</div>
 					<div class="carousel-item" data-bs-interval="5000">
-						<a href="#"
-							><img
-								src="https://www.clarins.com.sg/on/demandware.static/-/Library-Sites-clarins-v3/default/dw410e014a/Homepage_CBA/Aspot/LAUNCHES/TREATMENT_ESSENCE/CBA_HP_AspotMajor-Large_TREATMENT-ESSENCE-Range.jpg"
-								class="d-block w-100"
-								alt="..."
-						/></a>
+						<a href="/makeup">
+							<div class="slider__picture">
+								<img
+									src="https://www.clarins.com.sg/on/demandware.static/-/Library-Sites-clarins-v3/default/dw410e014a/Homepage_CBA/Aspot/LAUNCHES/TREATMENT_ESSENCE/CBA_HP_AspotMajor-Large_TREATMENT-ESSENCE-Range.jpg"
+									class=""
+									alt="..."
+								/>
+								<div class="slogan"></div>
+							</div>
+						</a>
 					</div>
 					<div class="carousel-item">
-						<a href="#"
-							><img
-								src="https://www.clarins.com.sg/on/demandware.static/-/Library-Sites-clarins-v3/default/dw6a2d1f28/Homepage_CBA/Aspot/ECOM/2022/AUG/220818_sg_live_show_desktop.jpg"
-								class="d-block w-100"
-								alt="..."
-						/></a>
+						<a href="/makeup">
+							<div class="slider__picture">
+								<img
+									src="https://www.clarins.com.sg/on/demandware.static/-/Library-Sites-clarins-v3/default/dw6a2d1f28/Homepage_CBA/Aspot/ECOM/2022/AUG/220818_sg_live_show_desktop.jpg"
+									class=""
+									alt="..."
+								/>
+								<div class="slogan"></div>
+							</div>
+						</a>
 					</div>
 				</div>
 				<button
@@ -90,6 +94,7 @@
 					type="button"
 					data-bs-target="#carouselExampleInterval"
 					data-bs-slide="next"
+					style="color: black"
 				>
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
