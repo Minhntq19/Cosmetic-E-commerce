@@ -1,0 +1,112 @@
+/**footer**/
+
+.footer-39201 {
+	padding: 30px 0;
+	background-color: #e5e5e5;
+}
+.footer-39201 .subscribe {
+	position: relative;
+}
+.footer-39201 .subscribe .form-control {
+	background-color: #e6e6e6e6;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 30px;
+	height: 50px;
+	padding-left: 30px;
+	padding-right: 130px;
+	border: none;
+	color: #000;
+}
+.footer-39201 .subscribe .form-control::-webkit-input-placeholder {
+	color: #000;
+	font-style: italic;
+	font-size: 14px;
+}
+.footer-39201 .subscribe .form-control::-moz-placeholder {
+	color: #000;
+	font-style: italic;
+	font-size: 14px;
+}
+.footer-39201 .subscribe .form-control:-ms-input-placeholder {
+	color: #000;
+	font-style: italic;
+	font-size: 14px;
+}
+.footer-39201 .subscribe .form-control:-moz-placeholder {
+	color: #000;
+	font-style: italic;
+	font-size: 14px;
+}
+.footer-39201 .subscribe .btn-submit {
+	background: #614ad3;
+	height: 40px;
+	border-radius: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+.footer-39201 h3 {
+	font-size: 16px;
+	font-weight: 900;
+	color: #000;
+	margin-bottom: 20px;
+}
+.footer-39201 .nav-links li {
+	display: block;
+	margin-bottom: 10px;
+}
+.footer-39201 .nav-links li a {
+	color: #000;
+}
+.footer-39201 .nav-links li a:hover {
+	color: #614ad3;
+}
+.footer-39201 .social li {
+	display: inline-block;
+}
+.footer-39201 .social li a {
+	display: inline-block;
+	padding: 10px;
+	color: #000;
+}
+.footer-39201 .social li a:hover {
+	color: #614ad3;
+}
+.col-wrap {
+	display: table-cell;
+	width: 1120px;
+}
+footer .col {
+	position: relative;
+	display: table-cell;
+	padding-left: 120px;
+	padding-right: -30px;
+	text-align: center;
+}
+footer .col:nth-child(even) {
+	background-color: #dcdcdc;
+}
+footer .col:nth-child(odd) {
+	background-color: #dcdcdc;
+}
+h2 {
+	width: 1120px;
+	text-align: center;
+	border-bottom: 1px solid #000;
+	line-height: 0.1em;
+	margin: 0px 130px 20px 115px;
+}
+h2 span {
+	background: #dcdcdc;
+	padding: 0 10px;
+	font-size: 18px;
+}
+.footer-logo {
+	text-align: center;
+	padding: 0 0 20px 0;
+}

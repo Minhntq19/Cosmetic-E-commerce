@@ -6,8 +6,10 @@ app.listen(port, function () {
 });
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
-
 app.get('/', (req, res) => {
+	res.render('home');
+});
+app.get('/makeup', (req, res) => {
 	res.render('makeup.ejs');
 });
 app.get('/skincare/face', function (req, res) {

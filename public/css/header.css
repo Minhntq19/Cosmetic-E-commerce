@@ -5,6 +5,10 @@
 	font-family: arial, sans-serif;
 	text-decoration: none;
 }
+a {
+	text-decoration: none !important;
+	color: #555;
+}
 html {
 	background-color: #fbf6f3;
 }
@@ -18,7 +22,7 @@ html {
 		opacity: 1;
 	}
 }
-.active {
+.show {
 	display: flex !important;
 	animation-name: subDropdown;
 	animation-duration: 0.3s;
@@ -84,7 +88,7 @@ html {
 .header__asset i {
 	text-align: center;
 }
-.col {
+.columns {
 	display: flex;
 	flex-direction: column;
 	width: 33.33%;
@@ -133,6 +137,7 @@ html {
 	height: 60%;
 	align-items: center;
 	margin-bottom: 2px;
+	text-decoration: none;
 }
 .header__submenu a:after {
 	content: '';
@@ -198,6 +203,9 @@ html {
 }
 .product__type a:hover {
 	color: #c40d2e;
+}
+.product__type .product__details a {
+	text-decoration: none;
 }
 .product__type img {
 	width: 128px;
