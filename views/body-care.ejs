@@ -6,24 +6,31 @@
 		<!-- Title -->
 		<title>Body Care Products</title>
 		<!-- css -->
-		<%- include("body-care-css.ejs") %>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
 		<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css" />
-		<link rel="stylesheet" href="/css/header.css" />
+<!--		<link rel="stylesheet" href="/css/header.css" />-->
 		<link rel="stylesheet" href="/css/footer.css" />
+		<%- include("body-care-css.ejs") %>
 	</head>
 	<body>
 		<!-- ========== HEADER ========== -->
-		<%- include("header.ejs") %>
+<!--		<%- include("header.ejs") %>-->
 		<!-- ========== END HEADER ========== -->
 
 		<!-- ========== MAIN ========== -->
-		<h1 class="py-5" style="padding-top: 100px">Body Care</h1>
-		<div class="container" style="padding-top: 100px">
-			<div>
+		<main style="padding-top: 100px">
+			<div class="banner">
+				<div class="container">
+					<div class="py-5">
+						<h1 class="my-0">Body Care</h1>
+						<p class="my-0">Shop for the best body care products online at Clarins Singapore</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
 				<div class="row">
 					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb">
+						<ol class="breadcrumb m-0">
 							<li class="breadcrumb-item"><a href="#">Home</a></li>
 							<li class="breadcrumb-item"><a href="#">Face & Body Care </a></li>
 							<li class="breadcrumb-item active" aria-current="page">Body Care</li>
@@ -34,13 +41,13 @@
 					<nav class="navbar navbar-expand-lg bg-light">
 						<div class="container-fluid">
 							<button
-								class="navbar-toggler"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#navbarSupportedContent"
-								aria-controls="navbarSupportedContent"
-								aria-expanded="false"
-								aria-label="Toggle navigation"
+									class="navbar-toggler"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#navbarSupportedContent"
+									aria-controls="navbarSupportedContent"
+									aria-expanded="false"
+									aria-label="Toggle navigation"
 							>
 								<span class="navbar-toggler-icon"></span>
 							</button>
@@ -48,344 +55,98 @@
 								<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 									<li class="nav-item dropdown">
 										<a
-											class="nav-link dropdown-toggle"
-											href="#"
-											role="button"
-											data-bs-toggle="dropdown"
-											aria-expanded="false"
+												class="nav-link dropdown-toggle"
+												href="#"
+												role="button"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
 										>
 											CATEGORY
 										</a>
-										<ul class="dropdown-menu p-2" style="width: 250px">
+										<ul class="dropdown-menu p-2">
 											<li class="nav nav-pills flex-column">
 												<a class="nav-link" href="#">Face</a>
-												<a class="nav-link" href="#"><b>Body Care</b></a>
-												<nav class="nav nav-pills flex-column">
-													<a class="nav-link ms-3 my-1 p-0" href="#">Body Exfoliators</a>
-													<a class="nav-link ms-3 my-1 p-0" href="#">Body Contouring</a>
-													<a class="nav-link ms-3 my-1 p-0" href="#">Body Firming</a>
-													<a class="nav-link ms-3 my-1 p-0" href="#">Body Moisturisers</a>
-													<a class="nav-link ms-3 my-1 p-0" href="#">Body Treatment Oils</a>
-													<a class="nav-link ms-3 my-1 p-0" href="#">Bust Care</a>
-													<a class="nav-link ms-3 my-1 p-0" href="#">Hand & Foot Care</a>
-													<a class="nav-link ms-3 my-1 p-0" href="#">Hair Care</a>
-													<a class="nav-link ms-3 my-1 p-0" href="#">Treatment Fragrances</a>
-													<a class="nav-link ms-3 my-1 p-0" href="#">Suncare</a>
-												</nav>
-												<a class="nav-link" href="#">Maternity</a>
+												<a class="nav-link" href="#">Body Care</a>
 												<a class="nav-link" href="#">Men</a>
 											</li>
 										</ul>
 									</li>
 									<li class="nav-item dropdown">
 										<a
-											class="nav-link dropdown-toggle"
-											href="#"
-											role="button"
-											data-bs-toggle="dropdown"
-											aria-expanded="false"
+												class="nav-link dropdown-toggle"
+												href="#"
+												role="button"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
 										>
 											PRICE
 										</a>
 										<ul class="dropdown-menu p-2">
-											<li class="form-check">
-												<input
-													class="form-check-input"
-													type="checkbox"
-													value=""
-													id="$0 -> $50"
-												/>
-												<label class="form-check-label" for="$0 -> $50"> $0 -> $50 </label>
-											</li>
-											<li class="form-check">
-												<input
-													class="form-check-input"
-													type="checkbox"
-													value=""
-													id="$0 -> $100"
-												/>
-												<label class="form-check-label" for="$0 -> $100"> $0 -> $100 </label>
-											</li>
-											<li class="form-check">
-												<input
-													class="form-check-input"
-													type="checkbox"
-													value=""
-													id="Extra-Firming"
-												/>
-												<label class="form-check-label" for="Extra-Firming"> $0 -> $500 </label>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-item dropdown">
-										<a
-											class="nav-link dropdown-toggle"
-											href="#"
-											role="button"
-											data-bs-toggle="dropdown"
-											aria-expanded="false"
-										>
-											CONCERN
-										</a>
-										<ul class="dropdown-menu p-2" style="width: 250px">
-											<li class="form-check">
-												<input
-													class="form-check-input"
-													type="checkbox"
-													value=""
-													id="Anti-Ageing"
-												/>
-												<label class="form-check-label" for="Anti-Ageing"> Anti Ageing </label>
-											</li>
-											<li class="form-check">
-												<input
-													class="form-check-input"
-													type="checkbox"
-													value=""
-													id="Body-Slimming"
-												/>
-												<label class="form-check-label" for="Body-Slimming">
-													Body Slimming
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="flexRadioDefault" id="$50">
+												<label class="form-check-label" for="$50">
+													$0 -> $50
 												</label>
-											</li>
-											<li class="form-check">
-												<input
-													class="form-check-input"
-													type="checkbox"
-													value=""
-													id="Cellulite-Control"
-												/>
-												<label class="form-check-label" for="Cellulite-Control">
-													Cellulite Control
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="flexRadioDefault" id="$100">
+												<label class="form-check-label" for="$100">
+													$0 -> $100
 												</label>
-											</li>
-											<li class="form-check">
-												<input
-													class="form-check-input"
-													type="checkbox"
-													value=""
-													id="Firming&Toning"
-												/>
-												<label class="form-check-label" for="Firming&Toning">
-													Firming & Toning
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="flexRadioDefault" id="$500">
+												<label class="form-check-label" for="$500">
+													$0 -> $500
 												</label>
-											</li>
-											<li class="form-check">
-												<input
-													class="form-check-input"
-													type="checkbox"
-													value=""
-													id="Moisturise&Comfort"
-												/>
-												<label class="form-check-label" for="Moisturise&Comfort">
-													Moisturise & Comfort
-												</label>
-											</li>
-											<li class="form-check">
-												<input
-													class="form-check-input"
-													type="checkbox"
-													value=""
-													id="Pregnancy"
-												/>
-												<label class="form-check-label" for="Pregnancy"> Pregnancy </label>
-											</li>
-											<li class="form-check">
-												<input class="form-check-input" type="checkbox" value="" id="SPF-50" />
-												<label class="form-check-label" for="SPF-50"> SPF 50 </label>
-											</li>
-											<li class="form-check">
-												<input
-													class="form-check-input"
-													type="checkbox"
-													value=""
-													id="Stretch-Marks"
-												/>
-												<label class="form-check-label" for="Stretch-Marks">
-													Stretch Marks
-												</label>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-item dropdown">
-										<a
-											class="nav-link dropdown-toggle"
-											href="#"
-											role="button"
-											data-bs-toggle="dropdown"
-											aria-expanded="false"
-										>
-											TEXTURE
-										</a>
-										<ul class="dropdown-menu p-2">
-											<li class="form-check">
-												<input class="form-check-input" type="checkbox" value="" id="Balm" />
-												<label class="form-check-label" for="Balm"> Balm </label>
-											</li>
-											<li class="form-check">
-												<input class="form-check-input" type="checkbox" value="" id="Cream" />
-												<label class="form-check-label" for="Cream"> Cream </label>
-											</li>
-											<li class="form-check">
-												<input
-													class="form-check-input"
-													type="checkbox"
-													value=""
-													id="CreamGel"
-												/>
-												<label class="form-check-label" for="CreamGel"> Cream Gel </label>
-											</li>
-											<li class="form-check">
-												<input class="form-check-input" type="checkbox" value="" id="Gel" />
-												<label class="form-check-label" for="Gel"> Gel </label>
-											</li>
-											<li class="form-check">
-												<input class="form-check-input" type="checkbox" value="" id="Lotion" />
-												<label class="form-check-label" for="Lotion"> Lotion </label>
-											</li>
-											<li class="form-check">
-												<input class="form-check-input" type="checkbox" value="" id="Oil" />
-												<label class="form-check-label" for="Oil"> Oil </label>
-											</li>
-											<li class="form-check">
-												<input
-													class="form-check-input"
-													type="checkbox"
-													value=""
-													id="RichCream"
-												/>
-												<label class="form-check-label" for="RichCream"> Rich Cream </label>
-											</li>
-											<li class="form-check">
-												<input class="form-check-input" type="checkbox" value="" id="Spray" />
-												<label class="form-check-label" for="Spray"> Spray </label>
-											</li>
-											<li class="form-check">
-												<input
-													class="form-check-input"
-													type="checkbox"
-													value=""
-													id="WithBeads"
-												/>
-												<label class="form-check-label" for="WithBeads"> With Beads </label>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-item dropdown">
-										<a
-											class="nav-link dropdown-toggle"
-											href="#"
-											role="button"
-											data-bs-toggle="dropdown"
-											aria-expanded="false"
-										>
-											SKIN TYPE
-										</a>
-										<ul class="dropdown-menu p-2">
-											<li class="form-check">
-												<input
-													class="form-check-input"
-													type="checkbox"
-													value=""
-													id="All Skin Types"
-												/>
-												<label class="form-check-label" for="All Skin Types">
-													All Skin Types
-												</label>
-											</li>
-											<li class="form-check">
-												<input
-													class="form-check-input"
-													type="checkbox"
-													value=""
-													id="Combination"
-												/>
-												<label class="form-check-label" for="Combination"> Combination </label>
-											</li>
-											<li class="form-check">
-												<input class="form-check-input" type="checkbox" value="" id="Dry" />
-												<label class="form-check-label" for="Dry"> Dry </label>
-											</li>
-											<li class="form-check">
-												<input class="form-check-input" type="checkbox" value="" id="Normal" />
-												<label class="form-check-label" for="Normal"> Normal </label>
-											</li>
-											<li class="form-check">
-												<input class="form-check-input" type="checkbox" value="" id="Oily" />
-												<label class="form-check-label" for="Oily"> Oily </label>
-											</li>
+											</div>
 										</ul>
 									</li>
 								</ul>
-								<div class="nav-item dropdown">
-									<a
-										class="nav-link dropdown-toggle"
-										href="#"
-										role="button"
-										data-bs-toggle="dropdown"
-										aria-expanded="false"
-									>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="16"
-											height="16"
-											fill="currentColor"
-											class="bi bi-sort-down"
-											viewBox="0 0 16 16"
-										>
-											<path
-												d="M3.5 2.5a.5.5 0 0 0-1 0v8.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L3.5 11.293V2.5zm3.5 1a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"
-											/>
-										</svg>
-										<span>SORT BY:</span>
-									</a>
-									<ul class="dropdown-menu dropdown-menu-end p-2">
-										<li><a class="dropdown-item" href="#">Best-Sellers</a></li>
-										<li><a class="dropdown-item" href="#">Most Popular</a></li>
-										<li><a class="dropdown-item" href="#">What's New</a></li>
-										<li><a class="dropdown-item" href="#">Price: High To Low</a></li>
-										<li><a class="dropdown-item" href="#">Price: Low To High</a></li>
-										<li><a class="dropdown-item" href="#">Recommended</a></li>
-									</ul>
-								</div>
+								<select class="form-select" aria-label="Default select example" style="width: 180px;border-radius: 0">
+									<option selected>SORT BY:</option>
+									<option value="1">Best-Sellers</option>
+									<option value="2">Most Popular</option>
+									<option value="3">What's New</option>
+									<option value="4">Price: High To Low</option>
+									<option value="5">Price: Low To High</option>
+									<option value="6">Recommended</option>
+								</select>
 							</div>
 						</div>
 					</nav>
 				</div>
-				<div class="row row-cols-1 row-cols-md-4 g-5">
+				<div class="row row-cols-1 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 g-5">
 					<div class="col">
-						<div class="card h-100">
-							<img src="/assets/photos/face-1.1.jpg" class="card-img-top" alt="face-1" />
-							<div class="card-body">
-								<h5 class="card-title">Double Serum</h5>
-								<p class="mb-1">Size: x/m/l</p>
-								<p class="mb-1">Price from:</p>
-								<span class="price dib mb__5" style="">
-									<del>$60.00</del>
-									<ins>$45.00</ins>
-								</span>
-								<p class="card-text"></p>
-								<!-- Button trigger modal -->
-								<div class="d-grid gap-2">
-									<button
+						<div class="card h-100" style="width: 18rem;">
+							<div class=" card-img-top carreaux_presentation_light mx-auto mt-1">
+								<button
 										type="button"
-										class="btn btn-danger"
+										class="btn btn-success deroul_soustitre"
 										data-bs-toggle="modal"
 										data-bs-target="#exampleModal"
-									>
-										Quick View
-									</button>
-								</div>
+								>
+									Quick View
+								</button>
+							</div>
+							<div class="card-body">
+								<h4 class="card-title pb-5 pt-3">Double Serum</h4>
+								<p class="mb-1">Price from:</p>
+								<span class="price dib mb__5">
+								<ins>$45.00</ins>
+							</span>
+								<p class="card-text"></p>
+								<!-- Button trigger modal -->
 							</div>
 						</div>
 					</div>
 					<!-- Modal -->
 					<div
-						class="modal fade"
-						id="exampleModal"
-						tabindex="-1"
-						aria-labelledby="exampleModalLabel"
-						aria-hidden="true"
+							class="modal fade"
+							id="exampleModal"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
 					>
 						<div class="modal-dialog modal-dialog-centered modal-xl">
 							<div class="modal-content">
@@ -394,87 +155,87 @@
 										<div class="row">
 											<div class="col-6">
 												<div
-													id="carouselExampleDark"
-													class="carousel carousel-dark slide"
-													data-bs-ride="carousel"
+														id="carouselExampleDark"
+														class="carousel carousel-dark slide"
+														data-bs-ride="carousel"
 												>
 													<div class="carousel-indicators">
 														<button
-															type="button"
-															data-bs-target="#carouselExampleDark"
-															data-bs-slide-to="0"
-															class="active"
-															aria-current="true"
-															aria-label="Slide 1"
+																type="button"
+																data-bs-target="#carouselExampleDark"
+																data-bs-slide-to="0"
+																class="active"
+																aria-current="true"
+																aria-label="Slide 1"
 														></button>
 														<button
-															type="button"
-															data-bs-target="#carouselExampleDark"
-															data-bs-slide-to="1"
-															aria-label="Slide 2"
+																type="button"
+																data-bs-target="#carouselExampleDark"
+																data-bs-slide-to="1"
+																aria-label="Slide 2"
 														></button>
 														<button
-															type="button"
-															data-bs-target="#carouselExampleDark"
-															data-bs-slide-to="2"
-															aria-label="Slide 3"
+																type="button"
+																data-bs-target="#carouselExampleDark"
+																data-bs-slide-to="2"
+																aria-label="Slide 3"
 														></button>
 													</div>
 													<div class="carousel-inner">
 														<div class="carousel-item active" data-bs-interval="5000">
 															<img
-																src="/assets/photos/face-1.2.jpg"
-																class="card-img-top"
-																alt="face-1"
+																	src="/assets/photos/face-1.2.jpg"
+																	class="card-img-top"
+																	alt="face-1"
 															/>
 														</div>
 														<div class="carousel-item" data-bs-interval="5000">
 															<img
-																src="/assets/photos/face-1.2.jpg"
-																class="card-img-top"
-																alt="face-1"
+																	src="/assets/photos/face-1.2.jpg"
+																	class="card-img-top"
+																	alt="face-1"
 															/>
 														</div>
 														<div class="carousel-item">
 															<img
-																src="/assets/photos/face-1.2.jpg"
-																class="card-img-top"
-																alt="face-1"
+																	src="/assets/photos/face-1.2.jpg"
+																	class="card-img-top"
+																	alt="face-1"
 															/>
 														</div>
 													</div>
 													<button
-														class="carousel-control-prev"
-														type="button"
-														data-bs-target="#carouselExampleDark"
-														data-bs-slide="prev"
+															class="carousel-control-prev"
+															type="button"
+															data-bs-target="#carouselExampleDark"
+															data-bs-slide="prev"
 													>
-														<span
+													<span
 															class="carousel-control-prev-icon"
 															aria-hidden="true"
-														></span>
+													></span>
 														<span class="visually-hidden">Previous</span>
 													</button>
 													<button
-														class="carousel-control-next"
-														type="button"
-														data-bs-target="#carouselExampleDark"
-														data-bs-slide="next"
+															class="carousel-control-next"
+															type="button"
+															data-bs-target="#carouselExampleDark"
+															data-bs-slide="next"
 													>
-														<span
+													<span
 															class="carousel-control-next-icon"
 															aria-hidden="true"
-														></span>
+													></span>
 														<span class="visually-hidden">Next</span>
 													</button>
 												</div>
 											</div>
 											<div class="col-6">
 												<button
-													type="button"
-													class="btn-close"
-													data-bs-dismiss="modal"
-													aria-label="Close"
+														type="button"
+														class="btn-close"
+														data-bs-dismiss="modal"
+														aria-label="Close"
 												></button>
 												<h1>Double Serum</h1>
 												<p>Our most powerful age control concentrate</p>
@@ -485,41 +246,41 @@
 												<div CLASS="my-4">
 													<h5 class="mb-3">SIZE:</h5>
 													<div
-														class="btn-toolbar"
-														role="toolbar"
-														aria-label="Toolbar with button groups"
+															class="btn-toolbar"
+															role="toolbar"
+															aria-label="Toolbar with button groups"
 													>
 														<div
-															class="btn-group me-2"
-															role="group"
-															aria-label="First group"
+																class="btn-group me-2"
+																role="group"
+																aria-label="First group"
 														>
 															<button
-																type="button"
-																class="btn btn-outline-dark"
-																style="border-radius: 100%"
+																	type="button"
+																	class="btn btn-outline-dark"
+																	style="border-radius: 100%"
 															>
 																S
 															</button>
 														</div>
 														<div
-															class="btn-group me-2"
-															role="group"
-															aria-label="Second group"
+																class="btn-group me-2"
+																role="group"
+																aria-label="Second group"
 														>
 															<button
-																type="button"
-																class="btn btn-outline-dark"
-																style="border-radius: 100%"
+																	type="button"
+																	class="btn btn-outline-dark"
+																	style="border-radius: 100%"
 															>
 																M
 															</button>
 														</div>
 														<div class="btn-group" role="group" aria-label="Third group">
 															<button
-																type="button"
-																class="btn btn-outline-dark"
-																style="border-radius: 100%"
+																	type="button"
+																	class="btn btn-outline-dark"
+																	style="border-radius: 100%"
 															>
 																L
 															</button>
@@ -527,29 +288,29 @@
 													</div>
 												</div>
 												<div
-													class="btn-toolbar"
-													role="toolbar"
-													aria-label="Toolbar with button groups"
+														class="btn-toolbar"
+														role="toolbar"
+														aria-label="Toolbar with button groups"
 												>
 													<div class="btn-group me-2" role="group" aria-label="Second group">
 														<button type="button" class="btn btn-danger">ADD TO BAG</button>
 													</div>
 													<div class="btn-group" role="group" aria-label="Third group">
 														<button
-															type="button"
-															class="btn btn-outline-warning"
-															style="border-radius: 100%"
+																type="button"
+																class="btn btn-outline-warning"
+																style="border-radius: 100%"
 														>
 															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="16"
-																height="16"
-																fill="currentColor"
-																class="bi bi-heart"
-																viewBox="0 0 16 16"
+																	xmlns="http://www.w3.org/2000/svg"
+																	width="16"
+																	height="16"
+																	fill="currentColor"
+																	class="bi bi-heart"
+																	viewBox="0 0 16 16"
 															>
 																<path
-																	d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+																		d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
 																/>
 															</svg>
 														</button>
@@ -559,54 +320,54 @@
 												<hr />
 												<p>
 													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														width="16"
-														height="16"
-														fill="currentColor"
-														class="bi bi-truck"
-														viewBox="0 0 16 16"
+															xmlns="http://www.w3.org/2000/svg"
+															width="16"
+															height="16"
+															fill="currentColor"
+															class="bi bi-truck"
+															viewBox="0 0 16 16"
 													>
 														<path
-															d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+																d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
 														/>
 													</svg>
 													Free Shipping
 												</p>
 												<p>
 													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														width="16"
-														height="16"
-														fill="currentColor"
-														class="bi bi-cash-stack"
-														viewBox="0 0 16 16"
+															xmlns="http://www.w3.org/2000/svg"
+															width="16"
+															height="16"
+															fill="currentColor"
+															class="bi bi-cash-stack"
+															viewBox="0 0 16 16"
 													>
 														<path
-															d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
+																d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
 														/>
 														<path
-															d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z"
+																d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z"
 														/>
 													</svg>
 													Get a 2-pc gift set with $350 spend.
 												</p>
 												<p>
 													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														width="16"
-														height="16"
-														fill="currentColor"
-														class="bi bi-coin"
-														viewBox="0 0 16 16"
+															xmlns="http://www.w3.org/2000/svg"
+															width="16"
+															height="16"
+															fill="currentColor"
+															class="bi bi-coin"
+															viewBox="0 0 16 16"
 													>
 														<path
-															d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"
+																d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"
 														/>
 														<path
-															d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+																d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
 														/>
 														<path
-															d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"
+																d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"
 														/>
 													</svg>
 													You can earn 225 points by purchasing this item.
@@ -614,16 +375,16 @@
 												<a class="text-center" href="#">
 													<b>SEE PRODUCT DETAILS</b>
 													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														width="16"
-														height="16"
-														fill="currentColor"
-														class="bi bi-arrow-right"
-														viewBox="0 0 16 16"
+															xmlns="http://www.w3.org/2000/svg"
+															width="16"
+															height="16"
+															fill="currentColor"
+															class="bi bi-arrow-right"
+															viewBox="0 0 16 16"
 													>
 														<path
-															fill-rule="evenodd"
-															d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+																fill-rule="evenodd"
+																d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
 														/>
 													</svg>
 												</a>
@@ -635,101 +396,100 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row mt-5">
-				<div class="col-2"></div>
-				<div class="col-8">
-					<div class="html-slot-container">
-						<h4>Shop for the best body care products online at Clarins Singapore</h4>
+				<div class="row mt-5">
+					<div class="col-2"></div>
+					<div class="col-8">
+						<div class="html-slot-container">
+							<h4>Shop for the best body care products online at Clarins Singapore</h4>
 
-						<h5>Importance of caring for your body</h5>
-						<p>
-							Your body deserves the best. When was the last time you pampered your body? The skin on your
-							body is susceptible to dehydration, wrinkles and cellulite, which is why you should use body
-							care products to replenish moisture, restore radiance and reduce the usual signs of ageing.
-						</p>
-						<h5>Body skin concerns</h5>
-						<p>
-							Stretch marks are common concerns among pregnant and new mothers. It’s natural for the skin
-							to itch and develop stretch marks as it expands during pregnancy, but don’t worry.
-						</p>
-						<p>
-							Our <strong><a>maternity body care</a></strong> products are designed without harsh
-							chemicals for the safety of mothers and babies. Use our mum-friendly
-							<strong><a>Body Partner Stretch Mark Expert</a></strong> on your thighs, hips, tummy and
-							breasts to visibly reduce the appearance of stretch marks. Infused with Centella Asiatica,
-							Banana and Hazelnut Oil, this fragrance-free cream introduces an ultra-sensorial formula as
-							it glides over your skin to relieve tightness, soothe and restore skin density. Pair this
-							with the firming <strong><a>Tonic Body Treatment Oil</a></strong> for the best results.
-						</p>
-						<p>
-							Quench dry skin with our range of plant-based
-							<strong><a>Moisture-Rich Body Lotion</a></strong> for velvety-smooth, supple skin, or the
-							<strong><a>Eau Ressourcante Silky Smooth Body Cream</a></strong> for a lightly scented,
-							moisturising boost that instantly relaxes and softens dry skin.
-						</p>
-						<p>
-							Keep cellulite at bay with our <strong><a>body contouring creams</a></strong
-							>. The <strong><a>Body Fit</a></strong> is a plant-powered cream that banishes cellulite and
-							sculpts your figure with the help of Quince, Celosia, Water Mint, Sunflower and Horse
-							Chestnut Extracts.
-						</p>
-						<p>
-							Struggling with stubborn fat? Use our <strong><a>Body Shaping Cream</a></strong> from our
-							<strong><a>body firming collection</a></strong
-							>. This slimming cream is packed with Poppy, Quince and Roselle to slow down the formation
-							of new fat, improve elasticity and boost hydration.
-						</p>
-						<p>
-							Lift sagging skin with our <strong><a>Super Restorative Redefining Body Care</a></strong
-							>, a lightweight gel loved by women over 50. Formulated with Pueraria Lobata and Clarins’
-							exclusive Crowberry extracts, this anti-ageing body lifting treatment streamlines your
-							silhouette to tighten and lift slacking skin around the waist and abdomen. It also hydrates
-							dry skin to reduce the appearance of wrinkles and fine lines.
-						</p>
+							<h5>Importance of caring for your body</h5>
+							<p>
+								Your body deserves the best. When was the last time you pampered your body? The skin on your
+								body is susceptible to dehydration, wrinkles and cellulite, which is why you should use body
+								care products to replenish moisture, restore radiance and reduce the usual signs of ageing.
+							</p>
+							<h5>Body skin concerns</h5>
+							<p>
+								Stretch marks are common concerns among pregnant and new mothers. It’s natural for the skin
+								to itch and develop stretch marks as it expands during pregnancy, but don’t worry.
+							</p>
+							<p>
+								Our <strong><a href="#">maternity body care</a></strong> products are designed without harsh
+								chemicals for the safety of mothers and babies. Use our mum-friendly
+								<strong><a href="#">Body Partner Stretch Mark Expert</a></strong> on your thighs, hips, tummy and
+								breasts to visibly reduce the appearance of stretch marks. Infused with Centella Asiatica,
+								Banana and Hazelnut Oil, this fragrance-free cream introduces an ultra-sensorial formula as
+								it glides over your skin to relieve tightness, soothe and restore skin density. Pair this
+								with the firming <strong><a href="#">Tonic Body Treatment Oil</a></strong> for the best results.
+							</p>
+							<p>
+								Quench dry skin with our range of plant-based
+								<strong><a href="#">Moisture-Rich Body Lotion</a></strong> for velvety-smooth, supple skin, or the
+								<strong><a href="#">Eau Ressourcante Silky Smooth Body Cream</a></strong> for a lightly scented,
+								moisturising boost that instantly relaxes and softens dry skin.
+							</p>
+							<p>
+								Keep cellulite at bay with our <strong><a href="#">body contouring creams</a></strong
+								>. The <strong><a href="#">Body Fit</a></strong> is a plant-powered cream that banishes cellulite and
+								sculpts your figure with the help of Quince, Celosia, Water Mint, Sunflower and Horse
+								Chestnut Extracts.
+							</p>
+							<p>
+								Struggling with stubborn fat? Use our <strong><a href="#">Body Shaping Cream</a></strong> from our
+								<strong><a href="#">body firming collection</a></strong
+								>. This slimming cream is packed with Poppy, Quince and Roselle to slow down the formation
+								of new fat, improve elasticity and boost hydration.
+							</p>
+							<p>
+								Lift sagging skin with our <strong><a href="#">Super Restorative Redefining Body Care</a></strong
+								>, a lightweight gel loved by women over 50. Formulated with Pueraria Lobata and Clarins’
+								exclusive Crowberry extracts, this anti-ageing body lifting treatment streamlines your
+								silhouette to tighten and lift slacking skin around the waist and abdomen. It also hydrates
+								dry skin to reduce the appearance of wrinkles and fine lines.
+							</p>
 
-						<h5>Why choose Clarins body care?</h5>
-						<p>
-							What you apply on your skin matters, and the reason customers love Clarins’ body care is
-							because our products are made with all-natural, plant-based ingredients that help nourish,
-							protect and treat the skin. Our maternity care range contains no harsh chemicals or toxins,
-							making them completely safe for pregnant moms and babies.
-						</p>
+							<h5>Why choose Clarins body care?</h5>
+							<p>
+								What you apply on your skin matters, and the reason customers love Clarins’ body care is
+								because our products are made with all-natural, plant-based ingredients that help nourish,
+								protect and treat the skin. Our maternity care range contains no harsh chemicals or toxins,
+								making them completely safe for pregnant moms and babies.
+							</p>
 
-						<h5>Clarins’ body care product range</h5>
-						<p>
-							Treat yourself to a spa-like shower with our <strong><a>aroma body care products</a></strong
-							>. Our <strong><a>Relax Bath & Shower</a></strong> relaxes your mind and muscles with
-							calming essential oils, while the
-							<strong><a>Tonic Bath & Shower Concentrate</a></strong> gently cleanses and tones your skin
-							with a soothing blend of Rosemary, Geranium and Mint Oils.
-						</p>
-						<p>
-							Hydrate dry skin with the <strong><a>Tonic Citrus Body Lotion</a></strong
-							>, a milky formula that melts into the skin to deliver deep hydration from Ispaghula and
-							Hazelnut Oils. If you want to firm up slacking skin, the
-							<strong><a>Tonic Body Balm</a></strong> improves vitality and tones the skin with Apple Seed
-							Oil and Ginseng extracts. <strong><a>Body treatment oils</a></strong> are always a good
-							idea. Our aroma body care oils contain aromatherapy benefits to calm your senses as well. If
-							you want to sculpt and moisturise your body, our bestselling
-							<strong><a>Anti-Eau Body Treatment Oil</a></strong> is perfect for toning the skin and
-							preventing dehydration.
-						</p>
-						<p>
-							Prevent sagging breasts with our <strong><a>bust care products</a></strong
-							>. Made with Vu Sua and Bocoa extracts, the
-							<strong><a>Bust Beauty Firming Lotion</a></strong> visibly tones and lifts slacking skin for
-							supple-looking breasts.
-						</p>
-						<p>
-							Shop more body care products on <strong><a>our site</a></strong
-							>.
-						</p>
+							<h5>Clarins’ body care product range</h5>
+							<p>
+								Treat yourself to a spa-like shower with our <strong><a href="#">aroma body care products</a></strong
+								>. Our <strong><a href="#">Relax Bath & Shower</a></strong> relaxes your mind and muscles with
+								calming essential oils, while the
+								<strong><a href="#">Tonic Bath & Shower Concentrate</a></strong> gently cleanses and tones your skin
+								with a soothing blend of Rosemary, Geranium and Mint Oils.
+							</p>
+							<p>
+								Hydrate dry skin with the <strong><a href="#">Tonic Citrus Body Lotion</a></strong
+								>, a milky formula that melts into the skin to deliver deep hydration from Ispaghula and
+								Hazelnut Oils. If you want to firm up slacking skin, the
+								<strong><a href="#">Tonic Body Balm</a></strong> improves vitality and tones the skin with Apple Seed
+								Oil and Ginseng extracts. <strong><a href="#">Body treatment oils</a></strong> are always a good
+								idea. Our aroma body care oils contain aromatherapy benefits to calm your senses as well. If
+								you want to sculpt and moisturise your body, our bestselling
+								<strong><a href="#">Anti-Eau Body Treatment Oil</a></strong> is perfect for toning the skin and
+								preventing dehydration.
+							</p>
+							<p>
+								Prevent sagging breasts with our <strong><a href="#">bust care products</a></strong
+								>. Made with Vu Sua and Bocoa extracts, the
+								<strong><a href="#">Bust Beauty Firming Lotion</a></strong> visibly tones and lifts slacking skin for
+								supple-looking breasts.
+							</p>
+							<p>
+								Shop more body care products on <a href="#"><b>our site</b></a>.
+							</p>
+						</div>
 					</div>
+					<div class="col-2"></div>
 				</div>
-				<div class="col-2"></div>
 			</div>
-		</div>
+		</main>
 		<!-- ========== END MAIN ========== -->
 
 		<!-- ========== FOOTER ========== -->

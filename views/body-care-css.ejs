@@ -4,12 +4,13 @@
 	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
 	crossorigin="anonymous"
 />
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
 
 <style type="text/css">
-	.row .py-5 {
-	}
-	h1.py-5 {
-		background-image: url('/assets/photos/banner2.jpg');
+
+	main .banner {
+		background-image: url('/assets/photos/banner3.jpg');
+		background-size:cover;
 	}
 	a {
 		text-decoration: none;
@@ -25,14 +26,56 @@
 	.nav-link:hover {
 		color: #c61663;
 	}
-	.price del {
-		color: #b6b4b4;
-	}
 	.price ins {
 		text-decoration: none;
-		color: red;
+		color: #c40d2e;
 	}
 	button.btn-close {
 		float: right;
+	}
+	img.card-img-top {
+		transform: scale(1);
+		transition: all 0.5s;
+	}
+	img.card-img-top:hover {
+		transform: scale(1.1);
+	}
+
+
+	.carreaux_presentation_light
+	{
+		background-image: url("/assets/photos/face-1.2.jpg");
+		display:table-cell;
+		width:17.5rem; height:17.5rem;
+		background-size:cover;
+		overflow: hidden;
+		position: relative;
+	}
+		.carreaux_presentation_light:hover
+	{
+		background-image: url("/assets/photos/face-1.1.jpg");
+	}
+	.carreaux_presentation_light .deroul_soustitre
+	{
+		position: absolute;
+		text-transform: uppercase;
+		font-family: 'Roboto';
+		padding: 5px;
+		z-index: 1000;
+		top:60%;right:-100%;
+		margin-top: 25px;
+		color:#ffffff;
+		font-weight: 300;
+		font-size: 13px; width: 80%;
+		text-align: left;
+		-webkit-transition: all 0.7s;
+		-moz-transition: all 0.7s;
+		-ms-transition: all 0.7s;
+		transition: all 0.7s;
+	}
+	.carreaux_presentation_light:hover .deroul_soustitre
+	{
+		background-color:#417c74;
+		right:-50px;
 	}
 </style>
