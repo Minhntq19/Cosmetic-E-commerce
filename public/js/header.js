@@ -11,30 +11,30 @@ header.onmouseover = (e) => {
 	const offer = e.target.closest('.exclusive__offer');
 	const aboutUs = e.target.closest('.about__us');
 	if (makeup) {
-		makeupSub.classList.add('show');
+		makeupSub.classList.add('shows');
 		overlay.classList.add('done');
 	} else if (skincare) {
-		document.querySelector('.show').classList.remove('show');
-		skincareSub.classList.add('show');
+		document.querySelector('.shows').classList.remove('shows');
+		skincareSub.classList.add('shows');
 		overlay.classList.add('done');
 	} else if (offer) {
-		document.querySelector('.show').classList.remove('show');
-		offerSub.classList.add('show');
+		document.querySelector('.shows').classList.remove('shows');
+		offerSub.classList.add('shows');
 		overlay.classList.add('done');
 	} else if (aboutUs) {
-		document.querySelector('.show').classList.remove('show');
-		aboutUsSub.classList.add('show');
+		document.querySelector('.shows').classList.remove('shows');
+		aboutUsSub.classList.add('shows');
 		overlay.classList.add('done');
 	} else {
-		document.querySelector('.show').classList.remove('show');
+		document.querySelector('.shows').classList.remove('shows');
 		overlay.classList.remove('done');
 	}
 };
 header.onmouseleave = () => {
-	const showSub = document.querySelector('.show');
-	if (showSub) {
-		showSub.onmouseleave = () => {
-			showSub.classList.remove('show');
+	const showsSub = document.querySelector('.shows');
+	if (showsSub) {
+		showsSub.onmouseleave = () => {
+			showsSub.classList.remove('shows');
 			overlay.classList.remove('done');
 		};
 	}
