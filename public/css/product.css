@@ -1,0 +1,424 @@
+/************product**************************/
+.product{
+    padding:100px 0 60px 0;
+    display:flex
+}
+.product-top{
+    padding-bottom: 40px;
+}
+.product-top p{
+    font-family: "Times New Roman";
+    font-size: 13px;
+    margin: 0 12px;
+    float: left;
+    display: inline;
+}
+/**Left Images**/
+.product-content-left{
+    width: 50%;
+}
+.product-content-left-big-img{
+    display:block;
+    max-width:80%;
+    height: 500px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+.product-content-left-big-img img{
+    width: 480px;
+    height: 480px;
+    border: 1px solid #dddddd;
+    transition: all 0.3s ease-in-out;
+}
+.product-content-left-big-img:hover img{
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+.product-content-left-small-img{
+    width: 20%;
+}
+.product-content-left-small-img img{
+    width: 100%;
+    margin-bottom: 5px;
+    border: 1px solid #dddddd;
+}
+.product-content-left-big-img #frame p{
+    height: 650px;
+}
+/***Right-infor**/
+.product-content-right{
+    width: 50%;
+    float:right;
+}
+/***Name***/
+.product-content-right-product-name h3{
+    font-family: var(--font-regular,"ClarinsRegular","Times New Roman",Times,serif);
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 400;
+}
+.product-content-right-product-name p{
+    font-family: var(--font-base,"Gotham SSm book A","Gotham SSm book B",Helvetica,Arial,sans-serif);
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 18px;
+    margin-bottom: 17px;
+}
+.product-content-right-product-name a:hover{
+    color: red;
+}
+.product-content-right-product-name-icon{
+    padding-bottom: 5px;
+}
+/***Price***/
+.product-content-right-product-price{
+    font-family: var(--font-medium,"Gotham SSm medium A","Gotham SSm medium B",Helvetica,Arial,sans-serif);
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    font-weight: 520;
+    margin-bottom: 17px;
+}
+/***Size***/
+.product-content-right-product-size{
+    display:flex;
+    margin-bottom: 17px;
+}
+/***Quantity***/
+
+.quantity input{
+    width: 80px;
+    height:35px;
+    padding-left: 10px;
+    border: 1px solid #cfcac9;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 0 0 17px 0;
+    transition: all 0.3s ease;
+}
+/*****button*****/
+.product-content-right-product-button button {
+    width: 150px;
+    height: 40px;
+    margin: 0 12px 0 0;
+    transition: all 0.3s ease;
+}
+/***Icon***/
+.product-content-right-product-icon{
+    display: flex;
+    margin-top:20px ;
+}
+.product-content-right-product-icon-item {
+    display: flex;
+    margin-right: 20px;
+    justify-content:center;
+    align-items: center;
+}
+.product-content-right-product-icon-item i{
+    font-size: 18px;
+    margin-right: 5px;
+    margin-bottom: 10px
+}
+/***bottom***/
+.product-content-right-bottom-title{
+    display: flex;
+}
+.product-content-right-bottom-icon{
+    padding-right: 20px;
+}
+.product-content-right-bottom-text{
+    font-size: 20px;
+}
+
+/***introduce****/
+.introduce{
+    padding-top:10px;
+    padding-bottom: 50px;
+}
+.introduce-header p{
+    font-size: 30px;
+    font-family: Arial;
+    text-align: center;
+    padding-bottom:30px;
+}
+.introduce-body{
+    width:1300px;
+    display: flex;
+}
+.introduce-left{
+    width:60%;
+    padding:0 20px 100px 0;
+}
+#flush-headingOne{
+    width:650px;
+    padding-left:50px
+}
+#flush-headingTwo{
+    width:650px;
+    padding-left:50px
+}
+#flush-headingThree{
+    width:650px;
+    padding-left:50px
+}
+.accordion-body{
+    float: left;
+    padding-left: 110px;
+}
+#bodyOne{
+    width: 700px;
+    height:400px;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+.card{
+    width:440px;
+    height:600px;
+    border: 5px solid #dddddd;
+}
+.card-body{
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial;
+    padding-top:15px
+}
+/******Instruction******/
+.instruction{
+    width:100%;
+    height: 1050px;
+    background-color: #dddddd;
+}
+.ins-header p{
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial;
+    padding-top: 50px;
+    padding-bottom:20px
+}
+.ins-body{
+    width:1200px;
+    height:330px;
+    border: 0.5px solid #000000;
+    margin: auto;
+    display: flex;
+}
+.ins-body-left{
+    width: 600px;
+    height: 330px;
+    border: 0.5px solid #000000;
+}
+.ins-body-left p{
+    padding-top:130px;
+    font-size:15px;
+    text-align: center;
+    font-family: Arial;
+}
+.ins-bottom{
+    padding:50px 115px 0 115px;
+    display: flex;
+}
+.ins-bottom .card{
+    height: 520px;
+    border-radius: 20px;
+    background-color: #dddddd;
+}
+.ins-card-title{
+    float: left;
+}
+.instruction .ins-bottom .card .card-body .card-title b{
+     padding-top: 15px;
+     font-size: 25px;
+     font-weight: 600;
+     float:left;
+     letter-spacing: 2px;
+}
+.instruction .ins-bottom .card .card-body .card-text{
+      padding-top:20px;
+      font-size: 13px;
+      float: left;
+      text-align: left;
+}
+.instruction .ins-bottom .card .card-note{
+    display: flex;
+    padding-bottom: 20px;
+    padding-left:10px;
+}
+.instruction .ins-bottom .card .card-note i{
+    font-size: 15px;
+    padding-right: 5px;
+    align-items: center;
+}
+.instruction .ins-bottom .card .card-note  p{
+    font-size: 15px ;
+    align-items: center;
+    line-height: 1;
+    padding-bottom: 20px;
+}
+/****************List Product Best Seller***********************/
+.list-product{
+    padding-top: 50px;
+    width: 100%;
+}
+.list-product-header h3{
+    font-size: 36px;
+    text-align: center;
+    font-family: "Times New Roman";
+    padding-bottom: 20px;
+}
+/**************************Feedback****************************/
+.feedback{
+    width: 100%;
+    height: 1870px;
+    padding-top: 50px;
+    background-color: #fbf6f3;
+    margin-top: 50px;
+}
+.feedback-container{
+    width: 1170px;
+    margin:auto;
+    height:1770px;
+    background-color: white;
+}
+.feedback-header h3{
+    font-size: 30px;
+    font-family: "Times New Roman";
+    text-align: center;
+    padding-top: 50px;
+}
+.feedback-body{
+    padding-top: 30px;
+}
+.feedback-review{
+    padding-top: 20px;
+    width:  100%;
+    height: 90px;
+    display: flex;
+    margin:auto;
+}
+.feedback-review-name p{
+    font-size: 15px;
+    font-weight: 550;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    padding-right: 935px;
+    padding-top:10px
+}
+.feedback-card{
+    width:100%;
+    height:270px;
+    display: flex;
+    padding-top: 20px;
+    border-bottom: 2px solid #cccccc;
+}
+.feedback-card-left{
+    width:25%;
+    height: 250px;
+    padding-left: 25px;
+    padding-top:20px;
+}
+.feedback-card-right{
+    width:75%;
+    height:250px;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+.feedback-card-item{
+    display: flex;
+}
+.feedback-card-date p{
+    padding-left: 10px;
+    font-size: 18px;
+    margin-top: -3px;
+}
+.feedback-card-title p{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+.feedback-card-text p{
+    font-size: 14px;
+}
+.feedback-card-note b{
+    padding-right: 8px;
+}
+.feedback-card-note i{
+    padding-right: 8px;
+}
+.feedback-card-box{
+    width:750px;
+    height: 45px;
+    border: 1px solid #000000;
+    display:flex;
+}
+.feedback-card-box-img{
+    width:75px;
+    height: 15px;
+    padding-left: 20px;
+    margin-top: 11px;
+}
+.feedback-card-box p{
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.feedback-card-answer{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.feedback-card-answer-title p{
+    font-size: 25px;
+    font-weight: 600;
+}
+.feedback-card-answer-text a:hover{
+    color: red;
+    text-decoration: none;
+}
+.feedback-footer{
+    display: flex;
+}
+.feedback-footer-name p{
+    font-size: 15px;
+    font-weight: 550;
+    padding-right: 870px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.feedback-footer-button button{
+    margin-top: 10px;
+}
+/*********Best Seller*************/
+.best-seller{
+    width: 100%;
+    height: 580px;
+    background-color: white;
+}
+.best-seller-header p{
+    font-family: var(--font-regular,"ClarinsRegular","Times New Roman",Times,serif);
+    font-size: 35px;
+    font-weight: 500;
+    color: #333333;
+    text-align: center;
+    margin: 30px auto  ;
+}
+.best-seller-main{
+    display: flex;
+    justify-content: space-evenly;
+}
+.best-seller-main-card{
+    width:265px;
+    height:455px;
+    border: 1px solid #cfcac9;
+}
+.best-seller-main-card-body{
+    margin: 10px 15px;
+}
+.best-seller-main-card-body-name p{
+    font-size: 15px;
+    font-weight: 550;
+}
+.best-seller-main-card-body-price p{
+    font-size: 16px;
+    font-weight: 550;
+}
+.best-seller-main-card-body-size{
+    border-top: 50px;
+}
