@@ -387,7 +387,11 @@ a {
   font-weight: 400;
   line-height: 20px;
 }
-
+/*important for align*/
+#content-clarins-story-ten-reasons #Line-04a #My-Pointer01 img, #content-clarins-story-ten-reasons #Line-04a #My-Pointer02 img {
+  position: absolute;
+  top: 150px;
+}
 
 /*breadcrumb*/
 .breadcrumb {
