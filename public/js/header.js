@@ -1,11 +1,11 @@
-const navHeader = document.querySelector('.header__submenu');
+const header = document.querySelector('.header__submenu');
 const makeupSub = document.querySelector('.forMakeup');
 const skincareSub = document.querySelector('.forSkincare');
 const offerSub = document.querySelector('.forOffer');
 const aboutUsSub = document.querySelector('.forAboutUs');
 const overlay = document.querySelector('.header__overlay');
 
-navHeader.onmouseover = (e) => {
+header.onmouseover = (e) => {
 	const makeup = e.target.closest('.makeup');
 	const skincare = e.target.closest('.skincare');
 	const offer = e.target.closest('.exclusive__offer');
@@ -30,7 +30,7 @@ navHeader.onmouseover = (e) => {
 		overlay.classList.remove('done');
 	}
 };
-navHeader.onmouseleave = () => {
+header.onmouseleave = () => {
 	const showsSub = document.querySelector('.shows');
 	if (showsSub) {
 		showsSub.onmouseleave = () => {
