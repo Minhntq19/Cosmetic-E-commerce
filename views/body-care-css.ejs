@@ -4,25 +4,51 @@
 	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
 	crossorigin="anonymous"
 />
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,100" rel="stylesheet" type="text/css" />
 
 <style type="text/css">
-<<<<<<< HEAD
-	.container {
+	main {
 		margin-top: 120px;
 	}
-	.py-5 {
-		background-image: url('/assets/photos/banner2.jpg');
-		padding-top: 120px;
-		top: 120px;
-		display: flex;
-		margin-top: 120px;
-=======
-
-	main .banner {
+	.banner {
 		background-image: url('/assets/photos/banner3.jpg');
-		background-size:cover;
->>>>>>> 9112a377f39e269a703aa26917b26602bf554a5c
+		background-size: cover;
+		width: 100%;
+	}
+	.banner h1 {
+		max-width: 1250px;
+		font-size: 35px;
+		line-height: 50px;
+		margin: 0 auto;
+		padding: 0 40px;
+	}
+	.container {
+		max-width: 1250px;
+		padding: 0 40px;
+	}
+	.row nav {
+		font-size: 12px;
+		font-family: system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+		margin-top: 8px;
+		font-weight: 500;
+		letter-spacing: 0.5px;
+	}
+	.navbar {
+		padding: 0 !important;
+		margin-left: 0.75rem;
+		margin-right: 0.75rem;
+		padding-right: 0 !important;
+		background-color: #eee !important;
+	}
+	.nav-link {
+		font-weight: 600;
+	}
+	.container-fluid {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.dropdown-menu {
+		border-radius: 0px !important;
 	}
 	a {
 		text-decoration: none;
@@ -53,41 +79,39 @@
 		transform: scale(1.1);
 	}
 
-
-	.carreaux_presentation_light
-	{
-		background-image: url("/assets/photos/face-1.2.jpg");
-		display:table-cell;
-		width:17.5rem; height:17.5rem;
-		background-size:cover;
+	.carreaux_presentation_light {
+		background-image: url('/assets/photos/face-1.2.jpg');
+		display: table-cell;
+		width: 17.5rem;
+		height: 17.5rem;
+		background-size: cover;
 		overflow: hidden;
 		position: relative;
 	}
-		.carreaux_presentation_light:hover
-	{
-		background-image: url("/assets/photos/face-1.1.jpg");
+	.carreaux_presentation_light:hover {
+		background-image: url('/assets/photos/face-1.1.jpg');
 	}
-	.carreaux_presentation_light .deroul_soustitre
-	{
+	.carreaux_presentation_light .deroul_soustitre {
 		position: absolute;
 		text-transform: uppercase;
 		font-family: 'Roboto';
 		padding: 5px;
 		z-index: 1000;
-		top:60%;right:-100%;
+		top: 60%;
+		right: -100%;
 		margin-top: 25px;
-		color:#ffffff;
+		color: #ffffff;
 		font-weight: 300;
-		font-size: 13px; width: 80%;
+		font-size: 13px;
+		width: 80%;
 		text-align: left;
 		-webkit-transition: all 0.7s;
 		-moz-transition: all 0.7s;
 		-ms-transition: all 0.7s;
 		transition: all 0.7s;
 	}
-	.carreaux_presentation_light:hover .deroul_soustitre
-	{
-		background-color:#417c74;
-		right:-50px;
+	.carreaux_presentation_light:hover .deroul_soustitre {
+		background-color: #417c74;
+		right: -50px;
 	}
 </style>
