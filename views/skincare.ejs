@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css" />
 		<link rel="stylesheet" href="/css/header.css" />
 		<link rel="stylesheet" href="/css/footer.css" />
-		<%- include("make-eyes-css.ejs") %>
+		<%- include("skincare-css.ejs") %>
 	</head>
 	<body>
 		<!-- ========== HEADER ========== -->
@@ -21,7 +21,7 @@
 		<main>
 			<div class="banner">
 				<div class="py-5">
-					<h1 class="my-0">Eyes</h1>
+					<h1 class="my-0">Face & Body care</h1>
 				</div>
 			</div>
 			<div class="container">
@@ -131,6 +131,7 @@
 					<div class="col justify-content-between">
 						<div class="card h-100" style="width: 16rem">
 							<div class="card-img-top carreaux_presentation_light mx-auto mt-1">
+								<img src="" alt="" />
 								<button
 									type="button"
 									class="btn btn-success deroul_soustitre"
@@ -151,8 +152,7 @@
 							</div>
 						</div>
 					</div>
-					<!-- Modal -->
-
+					<!-- Modal show hide -->
 					<div
 						class="modal fade"
 						id="exampleModal"
@@ -482,7 +482,7 @@
 		<!-- ========== END FOOTER ========== -->
 
 		<!-- ========== JS ========== -->
-		<%- include("make-eyes-js.ejs") %>
+		<%- include("body-care-js.ejs") %>
 		<script src="/js/header.js"></script>
 	</body>
 </html>

@@ -3,7 +3,6 @@
 	margin: 0;
 	padding: 0;
 	font-family: arial, sans-serif;
-	text-decoration: none;
 }
 a {
 	text-decoration: none !important;
@@ -113,7 +112,7 @@ html {
 	letter-spacing: 3px;
 	font-size: 35px;
 	font-weight: 600;
-	color: #c40d2e;
+	color: #c40d2e !important;
 	text-align: center;
 }
 
@@ -132,12 +131,13 @@ html {
 .header__submenu a {
 	display: flex;
 	flex-direction: column;
-	font-size: 13px;
+	font-size: 12px;
 	color: #555;
 	font-weight: 600;
 	height: 60%;
 	align-items: center;
 	margin-bottom: 2px;
+	letter-spacing: 1.5px;
 	text-decoration: none;
 }
 .header__submenu a:after {
@@ -213,6 +213,23 @@ html {
 	left: 50%;
 	right: 0%;
 	cursor: pointer;
+}
+.forOffer .product__type img {
+	width: 600px;
+}
+.forOffer .product__type {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.forOffer .product__type .product__details {
+	padding: 20px;
+}
+.border__right {
+	border-right: 1px solid #ccc !important;
+}
+.forOffer {
+	padding-top: 25px !important;
 }
 .product__details {
 	display: flex;
