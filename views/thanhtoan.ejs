@@ -5,19 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+			integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+			integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+			crossorigin="anonymous"
+		></script>
+		<!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css" />
-
     <link rel="stylesheet" href="/css/header.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/thanhtoan.css">
 </head>
 <body>
 <%- include('header.ejs')%>
-
 <div class="container" style="padding-top: 121px">
-
     <div class="col-md-8 order-md-1">
-        <h4 class="mb-3">PayMent</h4>
+        <h4 class="mb-3 column-labels">Shipping information</h4>
         <form class="needs-validation" novalidate>
             <div class="row">
                 <div class="col-md-6 mb-3">
@@ -47,7 +69,7 @@
             </div>
 
             <div class="mb-3">
-                <label for="address">Adress<span class="text-muted"></span></label>
+                <label for="address">Address<span class="text-muted"></span></label>
                 <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
                 <div class="invalid-feedback">
                     Please enter your shipping address.
@@ -61,9 +83,9 @@
 
             <div class="row">
                 <div class="col-md-5 mb-3">
-                    <label for="country">City</label>
+                    <label for="country">Select City</label>
                     <select class="custom-select d-block w-100" id="country" required>
-                        <option value="">Chọn Tỉnh Thành</option>
+                        <option value="">City</option>
                         <option>Hà Nội</option>
                         <option>Hải Phòng</option>
                         <option>Quảng Ninh</option>
@@ -74,9 +96,9 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <label for="state">State</label>
+                    <label for="state">District</label>
                     <select class="custom-select d-block w-100" id="state" required>
-                        <option value="">Chọn Quận Huyện </option>
+                        <option value="">Select District</option>
                         <option>Cẩm Phả </option>
                         <option>Hạ Long </option>
                         <option>Tiên Yên </option>
@@ -100,10 +122,7 @@
                     </div>
                 </div>
             </div>
-
-
-            <h4 class="mb-3">Payment</h4>
-
+            <h4 class="mb-3 column-labels">Payment Method</h4>
             <div class="d-block my-3">
                 <div class="custom-control custom-radio">
                     <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required/>
@@ -134,7 +153,6 @@
                     <label class="custom-control-label" for="paypal">
                         <img class="method-icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/checkout/icon-payment-method-credit.svg" width="32" height="32" alt="icon">
                         <img class="method-icon" src="https://www.clarinsusa.com/on/demandware.static/-/Sites/default/dw7ccc633f/images/creditcards/master.gif"  width="32" height="32" alt="icon" >
-
                         Credit Card</label>
                 </div>
             </div>
@@ -173,14 +191,36 @@
                 </div>
             </div>
             <hr class="mb-4">
-            <button class="btn btn-danger btn-lg btn-block" type="submit" >PayMent</button>
-            <button class="btn btn-danger btn-lg btn-block" type="reset" >Cancel</button>
         </form>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-title">Order summary</div>
+        <div class="redeem-price">
+            <input type="text" placeholder="Promotion code" />
+            <button class="submit-promotion" type="summit">Apply</button>
+        </div>
+        <div class="totals">
+            <div class="totals-item">
+                <label>Subtotal</label>
+                <div class="totals-value" id="cart-subtotal"></div>
+            </div>
+            <div class="totals-item">
+                <label>Tax (10%)</label>
+                <div class="totals-value" id="cart-tax"></div>
+            </div>
+            <div class="totals-item">
+                <label>Shipping</label>
+                <div class="totals-value" id="cart-shipping"></div>
+            </div>
+            <div class="totals-item totals-item-total">
+                <label>Grand Total</label>
+                <div class="totals-value" id="cart-total"></div>
+            </div>
+        </div>
+        <button class="checkout"><a href="/shipping">Pay</a></button>
     </div>
 </div>
 </nav>
-
-
 <%- include('footer.ejs')%>
 <script src="/js/header.js"></script>
 <script src="/js.jquery.js"></script>
@@ -196,6 +236,7 @@
             box.slideDown();
             box.addClass("active");
         }
+    }
 </script>
 </body>
 </html>

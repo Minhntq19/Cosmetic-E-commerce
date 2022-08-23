@@ -55,3 +55,4 @@ navHeader.onmouseleave = () => {
 		};
 	}
 };
+console.log(skincareProduct);

@@ -76,7 +76,7 @@ body {
 	font-weight: 100;
 }
 label {
-	color: #aaa;
+	color: #555;
 }
 .header__submenu {
 	display: none;
@@ -180,7 +180,7 @@ label {
 .checkout:hover {
 	background-color: #9b0823;
 }
-.contents .column-labels {
+.column-labels {
 	background-color: #eee;
 	color: #000;
 	margin-bottom: 10px;
@@ -251,6 +251,9 @@ label {
 	min-height: 650px;
 	max-width: 1250px;
 	padding: 0 40px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
 }
 .contents {
 	width: 70%;
@@ -262,7 +265,7 @@ label {
 .sidebar {
 	width: 30%;
 	background-color: #eee;
-	min-height: 400px;
+	height: 400px;
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
@@ -303,4 +306,10 @@ label {
 	color: #000;
 	border: 2px solid #ccc;
 	border-radius: 3px;
+}
+.form-control {
+	border-radius: 0px;
+}
+select {
+	padding: 5px;
 }

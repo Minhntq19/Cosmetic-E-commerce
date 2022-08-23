@@ -128,31 +128,38 @@
 				</div>
 				<div class="row row-cols-1 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 g-5">
 					<!-- Modal -->
+					<%for (let i = 0; i < menProduct.length ; i++) { %>
 					<div class="col justify-content-between">
 						<div class="card h-100" style="width: 16rem">
-							<div class="card-img-top carreaux_presentation_light mx-auto mt-1">
+							<a href="/product/detail">
+								<div
+									class="card-img-top carreaux_presentation_light mx-auto mt-1"
+									style="background-image: url('<%=menProduct[i].ProductIMG%>')"
+									id="<%= menProduct[i].PID %>"
+								></div>
+							</a>
+							<div class="card-body">
+								<h4 class="card-title pt-3"><%= menProduct[i].ProductName %></h4>
+								<p class="mb-1">Price from:</p>
+								<p class="price dib mb__5">
+									<ins>$ <%= menProduct[i].ProductPrice%>.00</ins>
+								</p>
 								<button
 									type="button"
-									class="btn btn-success deroul_soustitre"
+									class="btn-view btn-success deroul_soustitre"
 									data-bs-toggle="modal"
 									data-bs-target="#exampleModal"
+									id="<%= menProduct[i].PID %>"
 								>
 									Quick View
 								</button>
-							</div>
-							<div class="card-body">
-								<h4 class="card-title pb-5 pt-3">Double Serum</h4>
-								<p class="mb-1">Price from:</p>
-								<span class="price dib mb__5">
-									<ins>$45.00</ins>
-								</span>
 								<p class="card-text"></p>
 								<!-- Button trigger modal -->
 							</div>
 						</div>
 					</div>
-					<!-- Modal -->
-
+					<!-- Modal show hide -->
+					<% } %>
 					<div
 						class="modal fade"
 						id="exampleModal"
