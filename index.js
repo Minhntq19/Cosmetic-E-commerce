@@ -1,16 +1,46 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT | 1234;
+
+const mysql = require('mysql');
+const connection = mysql.createConnection({
+	host: 'localhost',
+	port: '3306',
+	user: 'root',
+	password: '',
+	database: 'clarinsproduct',
+	multipleStatements: true,
+});
+connection.connect();
 app.listen(port, function () {
 	console.log('server is running..');
 });
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
+app.get('/data', (req, res) => {
+	const sql_txt = 'select * from clarinproduct where ProductCategory ="makeup"';
+	connection.query(sql_txt, (err, data) => {
+		if (err) res.send('404 not found');
+		else {
+			let makeupProduct = data;
+			res.send(makeupProduct);
+		}
+	});
+});
 app.get('/', (req, res) => {
 	res.render('home');
 });
 app.get('/makeup', (req, res) => {
-	res.render('makeup.ejs');
+	const sql_txt = 'select * from clarinproduct where ProductCategory ="makeup"';
+	connection.query(sql_txt, (err, data) => {
+		if (err) res.send('404 not found');
+		else {
+			let makeupProduct = data;
+			res.render('makeup.ejs', {
+				makeupProduct: makeupProduct,
+			});
+		}
+	});
 });
 app.set('view engine', 'ejs');
 app.use(express.static('public')); //cho phép truy cập vào các static
@@ -44,4 +74,7 @@ app.get('/shipping', function (req, res) {
 });
 app.get('/shopping', function (req, res) {
 	res.render('shop-ping');
+});
+app.get('/product/detail', (req, res) => {
+	res.render('product');
 });
