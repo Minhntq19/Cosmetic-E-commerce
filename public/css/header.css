@@ -35,7 +35,7 @@ html {
 .header__container {
 	position: fixed;
 	width: 100%;
-	z-index: 1000;
+	z-index: 100;
 	top: 0;
 }
 .header {
@@ -45,7 +45,7 @@ html {
 	width: 100%;
 	background-color: #fff;
 	box-shadow: 0px 2px 3px 0px #ccc;
-	z-index: 1000;
+	z-index: 200;
 }
 .header__content {
 	display: flex;
@@ -172,7 +172,7 @@ html {
 	width: 100%;
 	background-color: #fff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-	z-index: 900;
+	z-index: 100;
 	display: none;
 }
 .type__name {
@@ -245,4 +245,106 @@ html {
 	background: #000;
 	opacity: 0.3;
 	display: none;
+}
+.showbag {
+	display: flex !important;
+}
+.shopping__bag {
+	min-height: 200px;
+	width: 400px;
+	background: #f3f1f0;
+	margin-top: -42px;
+	z-index: 1000 !important;
+	display: none;
+	justify-content: flex-end;
+	margin-right: 60px;
+	float: right;
+	position: relative;
+	flex-direction: column;
+	padding: 24px;
+}
+.bag__title {
+	color: #333;
+	font-size: 16px;
+	font-family: system-ui;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+.bag__product {
+	list-style-type: none;
+	border-bottom: 1px solid #aaa;
+}
+
+.bag__detail img {
+	width: 70px;
+	margin-right: 10px;
+}
+.bag__detail {
+	height: 70px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.bag__product__info {
+	flex-grow: 2;
+}
+.bag__product__name {
+	font-size: 13px;
+	font-family: system-ui;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+.bag__product__size {
+	font-size: 11px;
+	font-family: system-ui;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	color: #666;
+}
+.bag__product__price {
+	font-size: 13px;
+	font-family: system-ui;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+.bag__product__qnt {
+	font-size: 11px;
+	font-family: system-ui;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	color: #666;
+}
+.bag__total {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+.bag__total__title {
+	font-size: 15px;
+	font-family: system-ui;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+.bag__total__result {
+	font-size: 15px;
+	font-family: system-ui;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+.view__bag {
+	width: 100%;
+	padding: 10px 0;
+}
+.view__bag button {
+	width: 100%;
+	border: none;
+	background-color: #c40d2e;
+	color: #eee;
+	height: 40px;
+	border-radius: 3px;
+	font-family: system-ui;
+	font-weight: 600;
+	font-size: 18px;
 }

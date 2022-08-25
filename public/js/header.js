@@ -4,7 +4,20 @@ const skincareSub = document.querySelector('.forSkincare');
 const offerSub = document.querySelector('.forOffer');
 const aboutUsSub = document.querySelector('.forAboutUs');
 const overlay = document.querySelector('.header__overlay');
+const headerBag = document.querySelector('.header__bag');
 
+headerBag.onmouseover = (e) => {
+	const shopBag = document.querySelector('.shopping__bag');
+	shopBag.classList.add('showbag');
+};
+headerBag.onmouseleave = (e) => {
+	const shopBag = document.querySelector('.showbag');
+	shopBag.onmouseleave = () => {
+		if (shopBag) {
+			shopBag.classList.remove('showbag');
+		}
+	};
+};
 navHeader.onmouseover = (e) => {
 	const makeup = e.target.closest('.makeup');
 	const skincare = e.target.closest('.skincare');
