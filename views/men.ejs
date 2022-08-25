@@ -131,7 +131,7 @@
 					<%for (let i = 0; i < menProduct.length ; i++) { %>
 					<div class="col justify-content-between">
 						<div class="card h-100" style="width: 16rem">
-							<a href="/product/detail">
+							<a href="/product/detail/<%= menProduct[i].PID %>">
 								<div
 									class="card-img-top carreaux_presentation_light mx-auto mt-1"
 									style="background-image: url('<%=menProduct[i].ProductIMG%>')"

@@ -41,7 +41,6 @@
 		<link rel="stylesheet" href="/css/header.css" />
 		<link rel="stylesheet" href="/css/footer.css" />
 		<!--Javascript-->
-		<script src="/js/product.js"></script>
 	</head>
 	<body>
 		<!--------------------Header---------------------------------------->
@@ -67,42 +66,49 @@
 					<div class="product-content-left row">
 						<div class="product-content-left-small-img">
 							<img
-								src="https://www.clarins.com.sg/dw/image/v2/AAJY_PRD/on/demandware.static/-/Sites-clarins-master-products/default/dwa3f0d955/original/80071907_original_original_X.jpg?sw=70&sh=70"
+								src="<%= detailProduct[0].ProductIMG%>"
 								onclick="zoomout(this)"
 								alt="image"
+								id="img1"
 							/>
 							<img
-								src="https://www.clarins.com.sg/dw/image/v2/AAJY_PRD/on/demandware.static/-/Sites-clarins-master-products/default/dwebc2ea9f/original/80071907_original_original_2.jpg?sw=70&sh=70"
+								src="<%= detailProduct[0].ProductIMG1%>"
 								onclick="zoomout(this)"
 								alt="image"
+								id="img2"
 							/>
 							<img
-								src="https://www.clarins.com.sg/dw/image/v2/AAJY_PRD/on/demandware.static/-/Sites-clarins-master-products/default/dwc06d93e7/original/80071907_original_original_3.jpg?sw=70&sh=70"
+								src="<%= detailProduct[0].ProductIMG2%>"
 								onclick="zoomout(this)"
 								alt="image"
+								id="img3"
 							/>
 							<img
-								src="https://www.clarins.com.sg/dw/image/v2/AAJY_PRD/on/demandware.static/-/Sites-clarins-master-products/default/dw28c34d58/original/80071907_original_original_4.jpg?sw=70&sh=70"
+								src="<%= detailProduct[0].ProductIMG3%>"
 								onclick="zoomout(this)"
 								alt="image"
+								id="img4"
 							/>
 							<img
-								src="https://www.clarins.com.sg/dw/image/v2/AAJY_PRD/on/demandware.static/-/Sites-clarins-master-products/default/dw711b4cb3/original/80071907_original_original_5.jpg?sw=70&sh=70"
+								src="<%= detailProduct[0].ProductIMG4%>"
 								onclick="zoomout(this)"
 								alt="image"
-							/>
-							<img
-								src="https://www.clarins.com.sg/dw/image/v2/AAJY_PRD/on/demandware.static/-/Sites-clarins-master-products/default/dwbb05f83b/original/80071907_original_original_8.jpg?sw=70&sh=70"
-								onclick="zoomout(this)"
-								alt="image"
+								id="img5"
 							/>
 						</div>
-						<div class="product-content-left-big-img row" id="frame"></div>
+						<div class="product-content-left-big-img row" id="frame">
+							<img
+								src="<%= detailProduct[0].ProductIMG%>"
+								onclick="zoomout(this)"
+								alt="image"
+								id="bigImg"
+							/>
+						</div>
 					</div>
 					<div class="product-content-right">
 						<!--Name-->
 						<div class="product-content-right-product-name">
-							<h3>Hydrating Gentle Foaming Cleanser</h3>
+							<h3><%= detailProduct[0].ProductName%></h3>
 							<div class="product-content-right-product-name-icon">
 								<i class="fas fa-star" style="font-size: 11px; color: #b40024"></i>
 								<i class="fas fa-star" style="font-size: 11px; color: #b40024"></i>
@@ -111,13 +117,11 @@
 								<i class="fas fa-star-half" style="font-size: 11px; color: #b40024"></i>
 							</div>
 							<p>
-								A foaming facial cleanser that hydrates and rebalances normal to dry skin.<u
-									><a href="#">PRODUCT DETAILS</a></u
-								>
+								<%= detailProduct[0].ProductDetail%><u><a href="#">PRODUCT DETAILS</a></u>
 							</p>
 						</div>
 						<!--Price-->
-						<div class="product-content-right-product-price">S$50.00</div>
+						<div class="product-content-right-product-price">$<%= detailProduct[0].ProductPrice%>.00</div>
 						<!--Size-->
 						<div class="product-content-right-product-size">
 							<div class="size">
@@ -706,12 +710,8 @@
 			<div class="best-seller-main">
 				<div class="best-seller-main-card">
 					<div class="best-seller-main-card-img">
-						<a href="#">
-							<img
-								src="https://www.clarins.com.sg/on/demandware.static/-/Library-Sites-clarins-v3/default/dwc0912219/Homepage_CBA/Pushs_carousel/CBA_HP_Pushs-Carousel-292x292_SKINDIAGNOSIS_Mixte_INTE.jpg"
-								class="card-img-top"
-								alt="..."
-							/>
+						<a href="/product/detail/31">
+							<img src="/photos/Body Partner Stretch Mark Expert.jpg" class="card-img-top" alt="..." />
 						</a>
 					</div>
 					<div class="best-seller-main-card-body">
@@ -722,7 +722,7 @@
 							<p>125 ml</p>
 						</div>
 						<div class="best-seller-main-card-body-price">
-							<p>S$50.00</p>
+							<p>S$105.00</p>
 						</div>
 						<div class="best-seller-main-card-body-rating">
 							<i class="fas fa-star" style="font-size: 17px; color: #b40024"></i>
@@ -735,12 +735,8 @@
 				</div>
 				<div class="best-seller-main-card">
 					<div class="best-seller-main-card-img">
-						<a href="#">
-							<img
-								src="https://www.clarins.com.sg/on/demandware.static/-/Library-Sites-clarins-v3/default/dwc0912219/Homepage_CBA/Pushs_carousel/CBA_HP_Pushs-Carousel-292x292_SKINDIAGNOSIS_Mixte_INTE.jpg"
-								class="card-img-top"
-								alt="..."
-							/>
+						<a href="/product/detail/35">
+							<img src="/photos/Body Fit.jpg" class="card-img-top" alt="..." />
 						</a>
 					</div>
 					<div class="best-seller-main-card-body">
@@ -751,7 +747,7 @@
 							<p>50 ml</p>
 						</div>
 						<div class="best-seller-main-card-body-price">
-							<p>S$175.00</p>
+							<p>S$100.00</p>
 						</div>
 						<div class="best-seller-main-card-body-rating">
 							<i class="fas fa-star" style="font-size: 17px; color: #b40024"></i>
@@ -764,12 +760,8 @@
 				</div>
 				<div class="best-seller-main-card">
 					<div class="best-seller-main-card-img">
-						<a href="#">
-							<img
-								src="https://www.clarins.com.sg/on/demandware.static/-/Library-Sites-clarins-v3/default/dwc0912219/Homepage_CBA/Pushs_carousel/CBA_HP_Pushs-Carousel-292x292_SKINDIAGNOSIS_Mixte_INTE.jpg"
-								class="card-img-top"
-								alt="..."
-							/>
+						<a href="/product/detail/24">
+							<img src="/photos/Micellar Cleansing Milk.jpg" class="card-img-top" alt="..." />
 						</a>
 					</div>
 					<div class="best-seller-main-card-body">
@@ -780,7 +772,7 @@
 							<p>1 item</p>
 						</div>
 						<div class="best-seller-main-card-body-price">
-							<p>S$205.00</p>
+							<p>S$30.00</p>
 						</div>
 						<div class="best-seller-main-card-body-rating">
 							<i class="fas fa-star" style="font-size: 17px; color: #b40024"></i>
@@ -793,12 +785,8 @@
 				</div>
 				<div class="best-seller-main-card">
 					<div class="best-seller-main-card-img">
-						<a href="#">
-							<img
-								src="https://www.clarins.com.sg/on/demandware.static/-/Library-Sites-clarins-v3/default/dwc0912219/Homepage_CBA/Pushs_carousel/CBA_HP_Pushs-Carousel-292x292_SKINDIAGNOSIS_Mixte_INTE.jpg"
-								class="card-img-top"
-								alt="..."
-							/>
+						<a href="/product/detail/30">
+							<img src="/photos/Total Eye Lift.jpg" class="card-img-top" alt="..." />
 						</a>
 					</div>
 					<div class="best-seller-main-card-body">
@@ -809,7 +797,7 @@
 							<p>30 ml</p>
 						</div>
 						<div class="best-seller-main-card-body-price">
-							<p>S$95.00</p>
+							<p>S$115.00</p>
 						</div>
 						<div class="best-seller-main-card-body-rating">
 							<i class="fas fa-star" style="font-size: 17px; color: #b40024"></i>
@@ -826,5 +814,6 @@
 		<!--------------------Footer----------------------------->
 		<%- include("footer.ejs") %>
 		<script src="/js/header.js"></script>
+		<script src="/js/changeImg.js"></script>
 	</body>
 </html>

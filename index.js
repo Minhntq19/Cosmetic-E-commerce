@@ -11,25 +11,28 @@ const connection = mysql.createConnection({
 	database: 'clarinsproduct',
 	multipleStatements: true,
 });
+app.set('view engine', 'ejs');
+app.use(express.static('public'));
 connection.connect();
 app.listen(port, function () {
 	console.log('server is running..');
 });
-app.set('view engine', 'ejs');
-app.use(express.static('public'));
+//get data API
 app.get('/data', (req, res) => {
-	const sql_txt = 'select * from clarinproduct where ProductCategory ="skincare"';
+	const sql_txt = 'select * from clarinproduct ';
 	connection.query(sql_txt, (err, data) => {
 		if (err) res.send('404 not found');
 		else {
-			let makeupProduct = data;
-			res.send(makeupProduct);
+			let ProductList = data;
+			res.send(ProductList);
 		}
 	});
 });
+//render home
 app.get('/', (req, res) => {
 	res.render('home');
 });
+//render makeup
 app.get('/makeup', (req, res) => {
 	const sql_txt = 'select * from clarinproduct where ProductCategory ="makeup"';
 	connection.query(sql_txt, (err, data) => {
@@ -42,9 +45,7 @@ app.get('/makeup', (req, res) => {
 		}
 	});
 });
-app.set('view engine', 'ejs');
-app.use(express.static('public')); //cho phép truy cập vào các static
-
+//render skincare
 app.get('/skincare', (req, res) => {
 	const sql_txt2 = 'select * from clarinproduct where ProductCategory ="skincare"';
 	connection.query(sql_txt2, (err, data) => {
@@ -57,9 +58,7 @@ app.get('/skincare', (req, res) => {
 		}
 	});
 });
-app.get('/makeup', function (req, res) {
-	res.render('face');
-});
+// render facecare
 app.get('/skincare/face', function (req, res) {
 	const sql_txt2 = 'select * from clarinproduct where ProductType ="facecare"';
 	connection.query(sql_txt2, (err, data) => {
@@ -72,6 +71,7 @@ app.get('/skincare/face', function (req, res) {
 		}
 	});
 });
+// render bodycare
 app.get('/skincare/body-care', function (req, res) {
 	const sql_txt2 = 'select * from clarinproduct where ProductType ="bodycare"';
 	connection.query(sql_txt2, (err, data) => {
@@ -84,6 +84,7 @@ app.get('/skincare/body-care', function (req, res) {
 		}
 	});
 });
+// render men
 app.get('/skincare/men', function (req, res) {
 	const sql_txt2 = 'select * from clarinproduct where ProductType ="men"';
 	connection.query(sql_txt2, (err, data) => {
@@ -96,14 +97,42 @@ app.get('/skincare/men', function (req, res) {
 		}
 	});
 });
+//render facemakeup
 app.get('/makeup/face', function (req, res) {
-	res.render('make-face');
+	const sql_txt2 = 'select * from clarinproduct where ProductType ="Face"';
+	connection.query(sql_txt2, (err, data) => {
+		if (err) res.send('404 not found');
+		else {
+			let faceProduct = data;
+			res.render('make-face.ejs', {
+				faceProduct: faceProduct,
+			});
+		}
+	});
 });
 app.get('/makeup/eyes', function (req, res) {
-	res.render('make-eyes');
+	const sql_txt2 = 'select * from clarinproduct where ProductType ="Eye"';
+	connection.query(sql_txt2, (err, data) => {
+		if (err) res.send('404 not found');
+		else {
+			let makeEyeProduct = data;
+			res.render('make-eyes.ejs', {
+				makeEyeProduct: makeEyeProduct,
+			});
+		}
+	});
 });
 app.get('/makeup/lips', function (req, res) {
-	res.render('make-lips');
+	const sql_txt2 = 'select * from clarinproduct where ProductType ="Lips"';
+	connection.query(sql_txt2, (err, data) => {
+		if (err) res.send('404 not found');
+		else {
+			let lipsProduct = data;
+			res.render('make-lips.ejs', {
+				lipsProduct: lipsProduct,
+			});
+		}
+	});
 });
 app.get('/shipping', function (req, res) {
 	res.render('thanhtoan');
@@ -111,6 +140,16 @@ app.get('/shipping', function (req, res) {
 app.get('/shopping', function (req, res) {
 	res.render('shop-ping');
 });
-app.get('/product/detail', (req, res) => {
-	res.render('product');
+app.get('/product/detail/:userID', (req, res) => {
+	var usersID = req.params.userID;
+	const sql_txt2 = 'select * from clarinproduct where PID = ' + usersID + ';';
+	connection.query(sql_txt2, (err, data) => {
+		if (err) res.send('404 not found');
+		else {
+			let detailProduct = data;
+			res.render('product.ejs', {
+				detailProduct: detailProduct,
+			});
+		}
+	});
 });
