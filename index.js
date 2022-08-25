@@ -134,6 +134,18 @@ app.get('/makeup/lips', function (req, res) {
 		}
 	});
 });
+app.get('/makeup/lips/price', function (req, res) {
+	const sql_txt2 = 'SELECT * FROM clarinproduct WHERE ProductType ="Lips" ORDER by ProductPrice asc;';
+	connection.query(sql_txt2, (err, data) => {
+		if (err) res.send('404 not found');
+		else {
+			let lipsProduct = data;
+			res.render('make-lips.ejs', {
+				lipsProduct: lipsProduct,
+			});
+		}
+	});
+});
 app.get('/shipping', function (req, res) {
 	res.render('thanhtoan');
 });
@@ -150,6 +162,16 @@ app.get('/product/detail/:userID', (req, res) => {
 			res.render('product.ejs', {
 				detailProduct: detailProduct,
 			});
+		}
+	});
+});
+app.get('/shopping/data', (req, res) => {
+	const sql_txt = 'select * from shopcart ';
+	connection.query(sql_txt, (err, data) => {
+		if (err) res.send('404 not found');
+		else {
+			let shoppingList = data;
+			res.send(shoppingList);
 		}
 	});
 });

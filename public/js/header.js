@@ -4,15 +4,30 @@ const skincareSub = document.querySelector('.forSkincare');
 const offerSub = document.querySelector('.forOffer');
 const aboutUsSub = document.querySelector('.forAboutUs');
 const overlay = document.querySelector('.header__overlay');
-const headerBag = document.querySelector('.header__bag');
+const headerAsset = document.querySelector('.header__asset');
 
-headerBag.onmouseover = (e) => {
+headerAsset.onmouseover = (e) => {
+	const headerBag = e.target.closest('.header__bag');
+	const headerUser = e.target.closest('.header__user');
 	const shopBag = document.querySelector('.shopping__bag');
-	shopBag.classList.add('showbag');
+	console.log(e.target);
+	if (headerBag) {
+		shopBag.classList.add('showbag');
+	} else if (headerUser) {
+		const showing = document.querySelector('.showbag');
+		if (showing) {
+			showing.classList.remove('showbag');
+		}
+	} else {
+		const showing = document.querySelector('.showbag');
+		if (showing) {
+			showing.classList.remove('showbag');
+		}
+	}
 };
-headerBag.onmouseleave = (e) => {
+headerAsset.onmouseleave = () => {
 	const shopBag = document.querySelector('.showbag');
-	shopBag.onmouseleave = () => {
+	shopBag.onmouseleave = (e) => {
 		if (shopBag) {
 			shopBag.classList.remove('showbag');
 		}
@@ -228,7 +243,7 @@ const getData = async () => {
 										aria-label="Toolbar with button groups"
 									>
 										<div class="btn-group me-2" role="group" aria-label="Second group">
-											<button type="button" class="btn btn-danger">ADD TO BAG</button>
+											<button type="button" class="btn btn-danger" id="${Pid}">ADD TO BAG</button>
 										</div>
 										<div class="btn-group" role="group" aria-label="Third group">
 											<button
@@ -332,7 +347,21 @@ const getData = async () => {
 				`;
 		}
 	};
+	const addBtn = document.querySelector('.btn-danger');
+	console.log(addBtn.id);
+	addBtn.onclick = (e) => {
+		console.log(1);
+	};
 };
 getData();
-// let data1 = await getData();
-// console.log(data1);
+const updateData = async () => {
+	const response = await fetch(dataAPI);
+	const data = await response.json();
+	function shopCart(Cid, name, price, qnt, productIMG) {
+		this.cid = Cid;
+		this.name = name;
+		this.price = price;
+		this.qnt = qnt;
+		this.productIMG = productIMG;
+	}
+};
