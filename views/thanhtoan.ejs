@@ -217,26 +217,13 @@
                 <div class="totals-value" id="cart-total"></div>
             </div>
         </div>
-        <button class="checkout"><a href="/shipping">Pay</a></button>
+        <button class="checkout">Pay</button>
     </div>
 </div>
-</nav>
+<!--</nav>-->
 <%- include('footer.ejs')%>
 <script src="/js/header.js"></script>
 <script src="/js.jquery.js"></script>
-<script type="text/javascript">
-    var box = $(".box");
-    function onBox() {
-        // box.show();
-        // box.fadeIn();
-        if(box.hasClass("active")){
-            box.removeClass("active");
-            box.hide();
-        }else{
-            box.slideDown();
-            box.addClass("active");
-        }
-    }
-</script>
+
 </body>
 </html>
