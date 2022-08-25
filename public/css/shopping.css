@@ -8,27 +8,51 @@
 .product-details {
 	float: left;
 	width: 37%;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .product-price {
 	float: left;
 	width: 12%;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .product-quantity {
 	float: left;
 	width: 10%;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .product-removal {
 	float: left;
 	width: 9%;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .product-line-price {
 	float: left;
 	width: 12%;
 	text-align: right;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 /* This is used as the traditional .clearfix class */
