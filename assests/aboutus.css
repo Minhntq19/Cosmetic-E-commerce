@@ -1,0 +1,427 @@
+
+body {
+  background: #fff;
+  color: #000;
+  font-family: gotham ssm book a,gotham ssm book b,Helvetica,Arial,sans-serif;
+  font-size: 11px;
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden;
+  display: flex;
+}
+#content-clarins-story-ten-reasons #Line-00 h1 {
+  font-family: ClarinsRegular;
+  font-size: 50px;
+  color: #000;
+  margin: 20px 0;
+  padding: 0;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 400;
+}
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.row {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#content-clarins-story-ten-reasons #Line-01 #Line-01-fw1-Bg, #content-clarins-story-ten-reasons #Line-04a #Line-04a-fw1-Bg {
+  position: absolute;
+  background: #fbfbfb;
+}
+
+#content-clarins-story-ten-reasons #Line-01 #My-Left{
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#content-clarins-story-ten-reasons .Visual img {
+  width: auto;
+  left: 50%;
+  position: relative;
+  margin-left: -800px;
+  top: 0;
+}
+.col-gutter {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#content-clarins-story-ten-reasons #Line-01 #My-Right {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#content-clarins-story-ten-reasons #Line-01 #My-Left h2 {
+  font-family: ClarinsRegular;
+  font-size: 130px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-weight: 400;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+#content-clarins-story-ten-reasons #Line-01 #My-Left h3 {
+  margin-bottom: 10px;
+}
+#content-clarins-story-ten-reasons #Line-01 #My-Left h3 {
+  font-family: ClarinsRegular;
+  font-size: 35px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-weight: 400;
+  line-height: 35px;
+}
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+#content-clarins-story-ten-reasons #Line-01 #My-Left sup {
+  font-size: 20px;
+}
+sup {
+  top: -0.5em;
+}
+#content-clarins-story-ten-reasons #Line-01 #My-Mentions {
+  line-height: 15px;
+}
+#content-clarins-story-ten-reasons #Line-01 #My-Mentions {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 20px;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+/**/
+#content-clarins-story-ten-reasons #Line-03 .row {
+  background: url(photos/anh3.jpg);
+  background-repeat: no-repeat ;
+  background-size: 1600px 499px;
+  background-position: center;
+  width: 1600px;
+  height: 499px;
+  margin-left: -50px;
+  top: 0;
+}
+
+#content-clarins-story-ten-reasons #Line-03 #white-box03 h2 {
+  color: #be0f34;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+#content-clarins-story-ten-reasons #Line-03 #white-box03 p {
+  color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+#content-clarins-story-ten-reasons #Line-04 #white-box03a h2 {
+  color: #be0f34;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+#content-clarins-story-ten-reasons #Line-05, #content-clarins-story-ten-reasons #Line-06, #content-clarins-story-ten-reasons #Line-07, #content-clarins-story-ten-reasons #Line-08, #content-clarins-story-ten-reasons #Line-09 {
+  position: relative;
+}
+
+#content-clarins-story-ten-reasons #Line-02 #white-box01 h2, #content-clarins-story-ten-reasons #Line-02 #white-box02 h2, #content-clarins-story-ten-reasons #Line-03 #white-box03 h2, #content-clarins-story-ten-reasons #Line-04 #white-box03a h2, #content-clarins-story-ten-reasons #Line-04a #white-box03b h2, #content-clarins-story-ten-reasons #Line-05 #white-box04 h2, #content-clarins-story-ten-reasons #Line-06 #white-box05 h2, #content-clarins-story-ten-reasons #Line-07 #white-box06 h2, #content-clarins-story-ten-reasons #Line-08 #white-box07 h2, #content-clarins-story-ten-reasons #Line-09 #white-box08 h2 {
+  color: #be0f34;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+#content-clarins-story-ten-reasons #Line-02 #white-box01 p, #content-clarins-story-ten-reasons #Line-02 #white-box02 p, #content-clarins-story-ten-reasons #Line-03 #white-box03 p, #content-clarins-story-ten-reasons #Line-04 #white-box03a p, #content-clarins-story-ten-reasons #Line-04a #white-box03b p, #content-clarins-story-ten-reasons #Line-05 #white-box04 p, #content-clarins-story-ten-reasons #Line-06 #white-box05 p, #content-clarins-story-ten-reasons #Line-07 #white-box06 p, #content-clarins-story-ten-reasons #Line-08 #white-box07 p, #content-clarins-story-ten-reasons #Line-09 #white-box08 p {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+#content-clarins-story-ten-reasons #Line-05 #white-box04 {
+  position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: #FFF;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    float: left;
+    right: 840px;
+}
+
+#content-clarins-story-ten-reasons #Line-05 img {
+  width: auto;
+  left: 50%;
+  position: relative;
+  margin-left: -800px;
+  top: 0;
+}
+
+
+#content-clarins-story-ten-reasons #Line-04 #white-box03a, #content-clarins-story-ten-reasons #Line-04a #white-box03b {
+  background-color: #FFF;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+
+
+b, strong {
+  font-weight: 700;
+}
+
+#content-clarins-story-ten-reasons #Line-05 #white-box04 h3, #content-clarins-story-ten-reasons #Line-06 #white-box05 h3 {
+  color: #be0f34;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+#content-clarins-story-ten-reasons #Line-06 #white-box05 {
+  position: absolute;
+  top: 0;
+  left: 825px;
+  background-color: #FFF;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 25px;
+  right: 190px;
+}
+
+#content-clarins-story-ten-reasons .My-CTA {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+a {
+  background: 0 0;
+}
+
+#content-clarins-story-ten-reasons #Line-06 img, #content-clarins-story-ten-reasons #Line-07 img, #content-clarins-story-ten-reasons #Line-08 img {
+  width: max-content;
+  left: 50%;
+  position: relative;
+  margin-left: -800px;
+  top: 2px;
+}
+
+#content-clarins-story-ten-reasons #Line-07 #white-box06 {
+  position: absolute;
+    top: 0;
+    left: 250px;
+    right: 856.675px;
+    background-color: #FFF;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 25px;
+}
+#content-clarins-story-ten-reasons #Line-08 #white-box07 {
+  position: absolute;
+  top: 10px;
+  right: 150px;
+  left: 925px;
+  background-color: #FFF;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 45px;
+}
+
+#content-clarins-story-ten-reasons #Line-02 #white-box01 h2 span, #content-clarins-story-ten-reasons #Line-02 #white-box02 h2 span, #content-clarins-story-ten-reasons #Line-03 #white-box03 h2 span, #content-clarins-story-ten-reasons #Line-04 #white-box03a h2 span, #content-clarins-story-ten-reasons #Line-04a #white-box03b h2 span, #content-clarins-story-ten-reasons #Line-05 #white-box04 h2 span, #content-clarins-story-ten-reasons #Line-06 #white-box05 h2 span, #content-clarins-story-ten-reasons #Line-07 #white-box06 h2 span, #content-clarins-story-ten-reasons #Line-08 #white-box07 h2 span, #content-clarins-story-ten-reasons #Line-09 #white-box08 h2 span {
+  font-family: ClarinsRegular;
+  font-size: 30px;
+  font-style: normal;
+  line-height: 35px;
+  color: #000;
+}
+
+#content-clarins-story-ten-reasons #Line-09 #white-box08 {
+  position: absolute;
+  top: 0;
+  left: 150px;
+  right: 850px;
+  background-color: #FFF;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 25px;
+}
+
+#content-clarins-story-ten-reasons #Line-04a #white-box03b {
+  background-color: #FFF;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 25px;
+  position: relative;
+  grid-template-columns: min-content auto;
+}
+
+#content-clarins-story-ten-reasons #Line-04a #My-Right-Line04a {
+  position: relative;
+}
+
+#content-clarins-story-ten-reasons #Line-04 {
+  height: 500px;
+  width: 1600px;
+}
+
+#content-clarins-story-ten-reasons #Line-04a #My-Prod10, #content-clarins-story-ten-reasons #Line-04a #My-Prod11, #content-clarins-story-ten-reasons #Line-04a #My-Prod12 {
+  width: 30%;
+  text-align: center;
+}
+
+#content-clarins-story-ten-reasons #Line-09 img {
+  width: max-content;
+  left: 50%;
+  position: relative;
+  margin-left: -800px;
+  top: 5px;
+}
+
+#content-clarins-story-ten-reasons #Line-04a #white-box03b {
+  background-color: #FFF;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 25px;
+  position: relative;
+  bottom: 50px;
+}
+
+#content-clarins-story-ten-reasons #Line-04a #My-Pointer01, #content-clarins-story-ten-reasons #Line-04a #My-Pointer02 {
+  width: 2%;
+}
+#content-clarins-story-ten-reasons #Line-04a #My-Prod10 h1, #content-clarins-story-ten-reasons #Line-04a #My-Prod11 h1, #content-clarins-story-ten-reasons #Line-04a #My-Prod12 h1 {
+  color: #be0f34;
+  font-size: 43px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5px;
+}
+
+#content-clarins-story-ten-reasons #Line-04a #My-Prod10 p, #content-clarins-story-ten-reasons #Line-04a #My-Prod11 p, #content-clarins-story-ten-reasons #Line-04a #My-Prod12 p {
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+/*important for align*/
+#content-clarins-story-ten-reasons #Line-04a #My-Pointer01 img, #content-clarins-story-ten-reasons #Line-04a #My-Pointer02 img {
+  position: absolute;
+  top: 150px;
+}
+
+/*breadcrumb*/
+.breadcrumb {
+  letter-spacing: .04em;
+}
+.breadcrumb-element:after {
+  color: #606060;
+  content: "/";
+  margin: 0 4px 0 8px;
+}
+/*xoa dau / o cuoi breadcrumb*/
+.breadcrumb-element:last-child:after {
+  content: "";
+}
+
+
+#content-clarins-story-ten-reasons #Line-02 #white-box02 {
+  position: absolute;
+  top: 640px;
+  left: 150px;
+  background-color: #FFF;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 25px;
+  right: 760px;
+}
+
+
+#content-clarins-story-ten-reasons #Line-02 img {
+  width: auto;
+  left: 50%;
+  position: relative;
+  margin-left: -800px;
+  top: 0;
+}
+
+#content-clarins-story-ten-reasons #Line-10 {
+  background-color: #fbfbfb;
+}
