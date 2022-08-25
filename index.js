@@ -146,6 +146,42 @@ app.get('/makeup/lips/price', function (req, res) {
 		}
 	});
 });
+app.get('/makeup/lips/priceaes', function (req, res) {
+	const sql_txt2 = 'SELECT * FROM clarinproduct WHERE ProductType ="Lips" ORDER by ProductPrice asc;';
+	connection.query(sql_txt2, (err, data) => {
+		if (err) res.send('404 not found');
+		else {
+			let lipsProduct = data;
+			res.render('make-lips.ejs', {
+				lipsProduct: lipsProduct,
+			});
+		}
+	});
+});
+app.get('/makeup/lips/pricedes', function (req, res) {
+	const sql_txt2 = 'SELECT * FROM clarinproduct WHERE ProductType ="Lips" ORDER by ProductPrice dsc;';
+	connection.query(sql_txt2, (err, data) => {
+		if (err) res.send('404 not found');
+		else {
+			let lipsProduct = data;
+			res.render('make-lips.ejs', {
+				lipsProduct: lipsProduct,
+			});
+		}
+	});
+});
+app.get('/makeup/lips/mostpopular', function (req, res) {
+	const sql_txt2 = 'SELECT * FROM clarinproduct WHERE ProductType ="Lips" ORDER by ProductRate dsc;';
+	connection.query(sql_txt2, (err, data) => {
+		if (err) res.send('404 not found');
+		else {
+			let lipsProduct = data;
+			res.render('make-lips.ejs', {
+				lipsProduct: lipsProduct,
+			});
+		}
+	});
+});
 app.get('/shipping', function (req, res) {
 	res.render('thanhtoan');
 });
