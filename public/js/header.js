@@ -354,14 +354,3 @@ const getData = async () => {
 	};
 };
 getData();
-const updateData = async () => {
-	const response = await fetch(dataAPI);
-	const data = await response.json();
-	function shopCart(Cid, name, price, qnt, productIMG) {
-		this.cid = Cid;
-		this.name = name;
-		this.price = price;
-		this.qnt = qnt;
-		this.productIMG = productIMG;
-	}
-};
