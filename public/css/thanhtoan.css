@@ -66,7 +66,9 @@ label {
 .column-labels .product-removal {
 	text-indent: -9999px;
 }
-
+.shopping__bag {
+	margin-top: 0;
+}
 /* Product entries */
 .product {
 	margin-bottom: 20px;
