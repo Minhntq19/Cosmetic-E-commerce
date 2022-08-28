@@ -38,20 +38,21 @@
 <body>
 <%- include('header.ejs')%>
 <div class="container" style="padding-top: 121px">
+
     <div class="col-md-8 order-md-1">
+        <form class="needs-validation" novalidate >
         <h4 class="mb-3 column-labels">Shipping information</h4>
-        <form class="needs-validation" novalidate>
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="firstName">First Name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="First Name *" value="" required>
+                    <input type="text" class="form-control" id="firstName" required placeholder="First Name *" value="" />
                     <div class="invalid-feedback">
                         Valid first name is required.
                     </div>
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="lastName">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="Last Name *" value="" required>
+                    <input type="text" class="form-control" id="lastName" placeholder="Last Name *" value="" required/>
                     <div class="invalid-feedback">
                         Valid last name is required.
                     </div>
@@ -62,7 +63,7 @@
 
             <div class="mb-3">
                 <label for="email">Email <span class="text-muted"></span></label>
-                <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com" required/>
                 <div class="invalid-feedback">
                     Please enter a valid email address for shipping updates.
                 </div>
@@ -70,21 +71,21 @@
 
             <div class="mb-3">
                 <label for="address">Address<span class="text-muted"></span></label>
-                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required/>
                 <div class="invalid-feedback">
                     Please enter your shipping address.
                 </div>
             </div>
 
             <div class="mb-3">
-                <label for="phonenumber">Phone Number <span class="text-muted">(Bắt Buộc )</span></label>
+                <label for="phonenumber">Phone Number <span class="text-muted"></span></label>
                 <input type="text" class="form-control" id="phonenumber" placeholder="+84..." required />
             </div>
 
             <div class="row">
                 <div class="col-md-5 mb-3">
                     <label for="country">Select City</label>
-                    <select class="custom-select d-block w-100" id="country" required>
+                    <select class="custom-select d-block w-100" id="country" required/>
                         <option value="">City</option>
                         <option>Hà Nội</option>
                         <option>Hải Phòng</option>
@@ -97,7 +98,7 @@
                 </div>
                 <div class="col-md-4 mb-3">
                     <label for="state">District</label>
-                    <select class="custom-select d-block w-100" id="state" required>
+                    <select class="custom-select d-block w-100" id="state" required/>
                         <option value="">Select District</option>
                         <option>Cẩm Phả </option>
                         <option>Hạ Long </option>
@@ -110,7 +111,7 @@
                 </div>
                 <div class="col-md-3 mb-3">
                     <label for="state">State</label>
-                    <select class="custom-select d-block w-100" id="state" required>
+                    <select class="custom-select d-block w-100" id="state" required/>
                         <option value=""></option>
                         <option>Cửa Ông</option>
                         <option>Cẩm Bình</option>
@@ -121,6 +122,26 @@
                         Please provide a valid state.
                     </div>
                 </div>
+            </div>
+            <h4 class="mb-3 column-labels">Shipping Method</h4>
+            <div class="d-block my-3">
+                <div class="custom-control custom-radio">
+                    <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required/>
+
+                    <label class="custom-control-label" for="credit">Shipping Via Viettel</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required/>
+
+                    <label class="custom-control-label" for="credit"> Shipping Via J&T Express</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required/>
+
+                    <label class="custom-control-label" for="credit">Shipping Via GHTK</label>
+                </div>
+
+
             </div>
             <h4 class="mb-3 column-labels">Payment Method</h4>
             <div class="d-block my-3">
@@ -191,9 +212,24 @@
                 </div>
             </div>
             <hr class="mb-4">
-        </form>
+
     </div>
+
     <div class="sidebar">
+        <div class="bag__product">
+            <li class="bag__detail">
+                <img src="/photos/4-Colour Eyeshadow Palette.jpg" alt="" />
+                <div class="bag__product__info">
+                    <div class="bag__product__name">4-Colour Eyeshadow Palette</div>
+                    <div class="bag__product__size">40g</div>
+                </div>
+                <div class="bag__product__payment">
+                    <div class="bag__product__price">$100.00</div>
+                    <div class="bag__product__qnt">QTY:2</div>
+                </div>
+            </li>
+        </div>
+
         <div class="sidebar-title">Order summary</div>
         <div class="redeem-price">
             <input type="text" placeholder="Promotion code" />
@@ -217,13 +253,21 @@
                 <div class="totals-value" id="cart-total"></div>
             </div>
         </div>
-        <button class="checkout">Pay</button>
+        <button type="submit" class="checkout">Pay</button>
     </div>
-</div>
+        </form>
+    </div>
+
+
+
+
 <!--</nav>-->
 <%- include('footer.ejs')%>
 <script src="/js/header.js"></script>
 <script src="/js.jquery.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+<script src="https://getbootstrap.com/docs/4.3/examples/checkout/form-validation.js"></script
 
 </body>
 </html>
