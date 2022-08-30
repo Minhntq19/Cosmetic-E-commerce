@@ -426,3 +426,6 @@
 .best-seller-main-card-body-size {
 	border-top: 50px;
 }
+.accordion-button:not(.collapsed) {
+	background-color: #fff;
+}

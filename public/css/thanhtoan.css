@@ -236,7 +236,7 @@ label {
 .sidebar {
 	width: 30%;
 	background-color: #eee;
-	height: 400px;
+	height: 460px;
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
@@ -284,4 +284,3 @@ label {
 select {
 	padding: 5px;
 }
-

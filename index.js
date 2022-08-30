@@ -32,6 +32,12 @@ app.get('/data', (req, res) => {
 app.get('/', (req, res) => {
 	res.render('home');
 });
+app.get('/about-us', (req, res) => {
+	res.render('aboutus');
+});
+app.get('/store', (req, res) => {
+	res.render('contactus');
+});
 //render makeup
 app.get('/makeup', (req, res) => {
 	const sql_txt = 'select * from clarinproduct where ProductCategory ="makeup"';
