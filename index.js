@@ -4,10 +4,10 @@ const port = process.env.PORT | 1234;
 
 const mysql = require('mysql');
 const connection = mysql.createConnection({
-	host: 'localhost',
+	host: 'https://www.db4free.net/phpMyAdmin',
 	port: '3306',
-	user: 'root',
-	password: '',
+	user: 'minhntq19',
+	password: 'jessica123',
 	database: 'clarinsproduct',
 	multipleStatements: true,
 });
