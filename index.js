@@ -5,7 +5,7 @@ const port = process.env.PORT | 1234;
 const mysql = require('mysql');
 const connection = mysql.createConnection({
 	host: 'db4free.net',
-	port: '||',
+	port: '3306',
 	user: 'minhntq19',
 	password: 'jessica123',
 	database: 'clarinsproduct',
