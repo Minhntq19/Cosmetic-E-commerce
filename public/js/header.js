@@ -89,7 +89,7 @@ navHeader.onmouseleave = () => {
 // popup view
 const productContainer = document.querySelector('.container');
 const productPopup = document.querySelector('.modal');
-const dataAPI = 'https://cosmestic.herokuapp.com/data';
+const dataAPI = 'https://cosmestic.onrender.com/data';
 const getData = async () => {
 	const response = await fetch(dataAPI);
 	const data = await response.json();

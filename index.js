@@ -1,14 +1,14 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 1234;
+const port = process.env.PORT || 3030;
 
 const mysql = require('mysql');
 const connection = mysql.createConnection({
-	host: 'db4free.net',
+	host: 'sql.freedb.tech',
 	port: '3306',
-	user: 'minhntq19',
-	password: 'jessica123',
-	database: 'clarinsproduct',
+	user: 'freedb_minhntq19',
+	password: '*779DUhqnDAB@p&',
+	database: 'freedb_clarinsproduct',
 	multipleStatements: true,
 });
 app.set('view engine', 'ejs');
